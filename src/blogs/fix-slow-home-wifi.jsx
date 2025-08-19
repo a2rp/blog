@@ -3,10 +3,11 @@ import styled from "styled-components";
 import speedtestNear from "../assets/blogs/fix-slow-home-wifi/speedtest-near-router.png";
 import placementDiagram from "../assets/blogs/fix-slow-home-wifi/router-placement-diagram.png";
 import interferenceChart from "../assets/blogs/fix-slow-home-wifi/channel-interference-chart.png";
+import { formatDate } from "../utils/format";
 
 export const meta = {
     slug: "fix-slow-home-wifi",
-    title: "Fixing Slow Home Wi-Fi: What I Actually Do (10–30 min checklist)",
+    title: "Fixing Slow Home Wi-Fi: What I Actually Do (10-30 min checklist)",
     date: "2025-03-09", // Sunday
     tags: ["networking", "wifi", "home-tech", "how-to"],
     excerpt:
@@ -34,7 +35,7 @@ export default function Post() {
     return (
         <article>
             <h1>{meta.title}</h1>
-            <p><em>{meta.date}</em> • {meta.tags.join(", ")}</p>
+            <p><em>{formatDate(meta.date)}</em> • {meta.tags.join(", ")}</p>
 
             <p>
                 If your video buffers or downloads crawl, try this before calling the ISP.
@@ -45,7 +46,7 @@ export default function Post() {
             <ul>
                 <li>Run a speed test <strong>on your phone next to the router</strong> and again in the slow room.</li>
                 <li>If you can, plug a laptop into the router with <strong>Ethernet</strong> and test once more.</li>
-                <li>If Ethernet is fast but Wi-Fi is slow → it’s a wireless issue, not the ISP line.</li>
+                <li>If Ethernet is fast but Wi-Fi is slow → it's a wireless issue, not the ISP line.</li>
             </ul>
 
             <Figure>
@@ -57,13 +58,13 @@ export default function Post() {
             <ul>
                 <li><strong>2.4 GHz</strong> goes farther, slower. Good for old/IoT devices.</li>
                 <li><strong>5 GHz</strong> (or 6 GHz if you have Wi-Fi 6E/7) is faster but hates walls. Use it for phones/laptops.</li>
-                <li>Give the bands different names like <code>Home-2G</code> and <code>Home-5G</code> so devices don’t pick the wrong one.</li>
+                <li>Give the bands different names like <code>Home-2G</code> and <code>Home-5G</code> so devices don't pick the wrong one.</li>
             </ul>
 
             <h2>3) Move the box (yes, really)</h2>
             <ul>
                 <li>Center of the home, shoulder height, away from thick walls and metal.</li>
-                <li>Don’t hide it in a cupboard. Height helps more than people expect.</li>
+                <li>Don't hide it in a cupboard. Height helps more than people expect.</li>
             </ul>
 
             <Figure>
@@ -97,7 +98,7 @@ export default function Post() {
             <h2>6) Extender vs mesh</h2>
             <p>
                 Extenders can halve your speed. If you have many dead spots, a <strong>mesh</strong> kit
-                (2–3 nodes over Ethernet backhaul if possible) is a better long-term fix.
+                (2-3 nodes over Ethernet backhaul if possible) is a better long-term fix.
             </p>
 
             <h2>7) When I call the ISP</h2>

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import cover from "../assets/blogs/pre-deploy-checklist/cover.png";
 import lighthouse from "../assets/blogs/pre-deploy-checklist/lighthouse.png";
 import ogPreview from "../assets/blogs/pre-deploy-checklist/og-preview.png";
+import { formatDate } from "../utils/format";
 
 export const meta = {
     slug: "frontend-pre-deploy-checklist",
@@ -10,7 +11,7 @@ export const meta = {
     date: "2025-02-16",
     tags: ["frontend", "react", "seo", "accessibility", "ai"],
     excerpt:
-        "Before I ship a React site, I run the same short checklist: build, links, meta, images, a11y, and basic perf. Here’s exactly what I do and the tiny AI assists I trust.",
+        "Before I ship a React site, I run the same short checklist: build, links, meta, images, a11y, and basic perf. Here's exactly what I do and the tiny AI assists I trust.",
     cover,
 };
 
@@ -34,12 +35,10 @@ export default function Post() {
     return (
         <article>
             <h1>{meta.title}</h1>
-            <p>
-                <em>{meta.date}</em> • {meta.tags.join(", ")}
-            </p>
+            <p><em>{formatDate(meta.date)}</em> • {meta.tags.join(", ")}</p>
 
             <p>
-                I don’t push a React site live without doing these checks. It takes me
+                I don't push a React site live without doing these checks. It takes me
                 ~15-20 minutes and saves me from obvious "why is the preview broken on
                 WhatsApp?" or "why is the CSS missing on GitHub Pages?" messages. I also
                 use AI in a few tiny places—never blindly.
@@ -74,7 +73,7 @@ export default defineConfig({
   <App />
 </BrowserRouter>`}</pre>
             <p>
-                I’ve broken this enough times to respect it. I don’t hardcode <code>/blog</code> in routes.
+                I've broken this enough times to respect it. I don't hardcode <code>/blog</code> in routes.
             </p>
 
             <h2>3) Links, 404s, and simple crawl</h2>
@@ -88,7 +87,7 @@ for (const r of routes) {
   console.log(r, res.status);
 }`}</pre>
             <p>
-                It’s basic, but it catches fat-fingered paths. I also copy
+                It's basic, but it catches fat-fingered paths. I also copy
                 <code>index.html</code> to <code>public/404.html</code> for SPA fallback.
             </p>
 
@@ -134,13 +133,13 @@ for (const r of routes) {
                 <li>Ensure buttons are buttons (not divs), links are links.</li>
             </ul>
             <p>
-                I don’t rely on AI here—small screens and keyboard feel tell me more than a score.
+                I don't rely on AI here—small screens and keyboard feel tell me more than a score.
             </p>
 
             <h2>7) Lighthouse basics (not chasing 100)</h2>
             <p>
                 I run one Lighthouse report, fix the obvious (render-blocking fonts, unused huge images),
-                and stop when it’s "good enough" for my use case.
+                and stop when it's "good enough" for my use case.
             </p>
 
             <Figure>
@@ -151,27 +150,27 @@ for (const r of routes) {
             <h2>8) Environment variables and secrets</h2>
             <ul>
                 <li>Confirm public keys are in <code>VITE_*</code> and safe to expose.</li>
-                <li>Ensure I didn’t log secrets in the console during dev.</li>
+                <li>Ensure I didn't log secrets in the console during dev.</li>
             </ul>
 
             <h2>9) Analytics & privacy basics</h2>
             <ul>
                 <li>Pageview fires once per route change (SPAs need manual hooks).</li>
-                <li>Respect "Do Not Track" if that’s a policy; cookie banner is not a license to collect everything.</li>
+                <li>Respect "Do Not Track" if that's a policy; cookie banner is not a license to collect everything.</li>
             </ul>
 
             <h2>10) Version bump, changelog, deploy</h2>
             <pre>{`npm version patch -m "chore: release %s"
 git push && npm run deploy`}</pre>
 
-            <h2>Where AI didn’t help (for me)</h2>
+            <h2>Where AI didn't help (for me)</h2>
             <ul>
                 <li>Auto-fix PRs that touch multiple concerns. It looked smart, broke edge cases.</li>
                 <li>"Write all the tests" prompts—too generic. I do one happy path myself, then ask for variations.</li>
             </ul>
 
             <p>
-                That’s it. Boring steps, fewer surprises. If I had to pick just three:
+                That's it. Boring steps, fewer surprises. If I had to pick just three:
                 production preview, OG image/description, and a quick Lighthouse pass.
                 The rest is muscle memory.
             </p>
