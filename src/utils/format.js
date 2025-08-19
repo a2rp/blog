@@ -1,15 +1,8 @@
-// src/utils/format.js
-export const slugify = (s = "") =>
-    s
-        .toLowerCase()
-        .trim()
-        .replace(/[^a-z0-9\s-]/g, "")
-        .replace(/\s+/g, "-")
-        .replace(/-+/g, "-");
-
-export const formatDate = (iso) =>
-    new Date(iso).toLocaleDateString(undefined, {
-        year: "numeric",
-        month: "short",
-        day: "2-digit",
-    });
+export const formatDate = (iso) => {
+    const d = new Date(iso);
+    if (Number.isNaN(d.getTime())) return iso;
+    const MMM = d.toLocaleString("en-US", { month: "short" }).toUpperCase(); // JAN
+    const DD = d.getDate(); // 25
+    const YYYY = d.getFullYear(); // 2025
+    return `${MMM} ${DD}, ${YYYY}`;
+};

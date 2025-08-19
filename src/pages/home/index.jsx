@@ -1,6 +1,8 @@
-import { useMemo } from "react";
-import { Link, useSearchParams } from "react-router-dom";
+import { useMemo, useRef } from "react";
+import { Link, NavLink, useSearchParams } from "react-router-dom";
 import { Styled } from "./styled";
+import { formatDate } from "../../utils/format";
+import { MdDeleteForever } from "react-icons/md";
 
 // Eager import ONLY for meta
 const metaModules = import.meta.glob("../../blogs/*.jsx", { eager: true });
@@ -37,12 +39,20 @@ export default function Home() {
         );
     }, [q, posts]);
 
+    const inputRef = useRef(null);
+    const clearSearch = () => {
+        const next = new URLSearchParams(params);
+        next.delete("q");
+        setParams(next, { replace: false });
+        inputRef.current?.focus();
+    };
+
     return (
         <Styled.Wrapper>
             <Styled.Main>
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 12 }}>
-                    <h1>Blog</h1>
+                <Styled.Head>
                     <input
+                        ref={inputRef}
                         value={q}
                         onChange={(e) => {
                             const v = e.target.value;
@@ -51,31 +61,67 @@ export default function Home() {
                             setParams(next, { replace: false });
                         }}
                         placeholder="Search posts, tags…"
-                        style={{ padding: "8px 10px", borderRadius: 10, background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.1)", color: "inherit" }}
                     />
-                </div>
 
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 18, marginTop: 16 }}>
-                    {filtered.map((p) => (
-                        <Link key={p.slug} to={`/${p.slug}`} style={{ textDecoration: "none", color: "inherit" }}>
-                            <article style={{ border: "1px solid rgba(255,255,255,0.1)", borderRadius: 16, overflow: "hidden", background: "rgba(255,255,255,0.03)" }}>
-                                <div style={{ height: 160, background: `#111 url(${p.cover}) center/cover no-repeat` }} />
-                                <div style={{ padding: 14 }}>
-                                    <h3 style={{ margin: "0 0 6px" }}>{p.title}</h3>
-                                    <div style={{ opacity: .8, fontSize: 12, marginBottom: 6 }}>{p.date}</div>
-                                    <p style={{ margin: 0, opacity: .9, fontSize: 14 }}>{p.excerpt}</p>
-                                    <div style={{ marginTop: 8, display: "flex", flexWrap: "wrap", gap: 6 }}>
-                                        {p.tags.map((t) => (
-                                            <span key={t} style={{ fontSize: 12, opacity: .9, border: "1px solid rgba(255,255,255,.12)", padding: "4px 8px", borderRadius: 999 }}>
-                                                #{t}
-                                            </span>
-                                        ))}
-                                    </div>
-                                </div>
-                            </article>
-                        </Link>
-                    ))}
-                </div>
+                    {q && (
+                        <div
+                            type="button"
+                            className="clearIconWrapper"
+                            aria-label="Clear search"
+                            onClick={clearSearch}
+                            onKeyDown={(e) => {
+                                if (e.key === "Enter" || e.key === " ") {
+                                    e.preventDefault();
+                                    clearSearch();
+                                }
+                            }}
+                        >
+                            <MdDeleteForever size={20} />
+                        </div>
+                    )}
+                </Styled.Head>
+
+
+                {filtered.length > 0 ? <>
+                    <Styled.CardsWrapper>
+                        {filtered.map((p) => (
+                            <Styled.Card
+                                key={p.slug}
+                                style={{ textDecoration: "none", color: "inherit" }}
+                            >
+                                <article
+                                    style={{ border: "1px solid rgba(255,255,255,0.1)", borderRadius: 16, overflow: "hidden", background: "rgba(255,255,255,0.03)" }}
+                                >
+                                    <Styled.Cover style={{ background: `#111 url(${p.cover}) center/cover no-repeat` }} />
+
+                                    <Styled.TextWrapper>
+                                        <Styled.Title title={p.title}>{p.title}</Styled.Title>
+
+                                        <Styled.LinkDateWrapper>
+                                            <NavLink
+                                                to={`/${p.slug}`}
+                                            >View Blog</NavLink>
+                                            <div className="date">{formatDate(p.date)}</div>
+                                        </Styled.LinkDateWrapper>
+
+                                        {/* excerpt */}
+                                        <Styled.Excerpt title={p.excerpt}>{p.excerpt}</Styled.Excerpt>
+
+                                        <div style={{ marginTop: 8, display: "flex", flexWrap: "wrap", gap: 6 }}>
+                                            {p.tags.map((t) => (
+                                                <span key={t} style={{ fontSize: 12, opacity: .9, border: "1px solid rgba(255,255,255,.12)", padding: "4px 8px", borderRadius: 999 }}>
+                                                    #{t}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    </Styled.TextWrapper>
+                                </article>
+                            </Styled.Card>
+                        ))}
+                    </Styled.CardsWrapper>
+                </> : <>
+                    <h1>No Posts Found</h1>
+                </>}
             </Styled.Main>
         </Styled.Wrapper>
     );

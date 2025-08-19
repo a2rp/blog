@@ -17,7 +17,7 @@ const App = () => {
             <Styled.Wrapper>
                 <Styled.Header>
                     <Styled.HeaderMain>
-                        <Styled.NavLink to="/">Home</Styled.NavLink>
+                        <Styled.NavLink to="/">Blogs</Styled.NavLink>
                         <Styled.NavLink to="/about">About</Styled.NavLink>
                     </Styled.HeaderMain>
                 </Styled.Header>

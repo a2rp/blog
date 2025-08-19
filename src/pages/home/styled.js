@@ -19,34 +19,47 @@ export const Styled = {
         justify-content: space-between;
         gap: 12px;
         margin: 6px 0 14px;
-    `,
-    Right: styled.div`
+
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        gap: 10px;
+        gap: 12;
+
+        margin-bottom: 30px;
+
+        position: relative;
+        overflow: hidden;
+
+        input {
+            padding: 8px 50px 8px 15px;
+            border-radius: 6px;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: inherit;
+            width: 100%;
+            outline: none;
+            height: 50px;
+        }
+
+        .clearIconWrapper {
+            /* border: 1px solid #fff; */
+            position: absolute;
+            right: 0;
+            height: 100%;
+            width: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
     `,
-    Search: styled.input`
-        padding: 8px 10px;
-        min-width: 260px;
-        border-radius: 12px;
-        background: rgba(255, 255, 255, 0.06);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        outline: none;
-        color: inherit;
-        font-size: 14px;
-    `,
-    Grid: styled.div`
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+    CardsWrapper: styled.div`
+        display: flex;
         gap: 18px;
-        @media (max-width: 1000px) {
-            grid-template-columns: repeat(2, 1fr);
-        }
-        @media (max-width: 640px) {
-            grid-template-columns: 1fr;
-        }
+        margin-top: 16px;
+        flex-wrap: wrap;
     `,
-    Card: styled.article`
+    Card: styled.div`
         border: 1px solid rgba(255, 255, 255, 0.1);
         background: rgba(255, 255, 255, 0.03);
         border-radius: 16px;
@@ -56,29 +69,57 @@ export const Styled = {
             transform: translateY(-3px);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
         }
+        flex: 1 1 300px;
     `,
     Cover: styled.div`
+        /* border: 1px solid #f00; */
         height: 160px;
         background: #111 center/cover no-repeat;
     `,
-    CardBody: styled.div`
-        padding: 14px;
-        display: grid;
-        gap: 8px;
+    TextWrapper: styled.div`
+        padding: 15px;
+    `,
+    LinkDateWrapper: styled.div`
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+            text-decoration: none;
+            color: orangered;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .date {
+            font-size: 12px;
+        }
     `,
     Title: styled.h3`
-        margin: 0;
         font-size: 18px;
         line-height: 1.35;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 15px;
     `,
     Meta: styled.div`
         font-size: 12px;
         opacity: 0.8;
     `,
     Excerpt: styled.p`
-        margin: 0;
         font-size: 14px;
-        opacity: 0.92;
+        opacity: 0.9;
+        line-height: 1.5;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
     `,
     Tags: styled.div`
         display: flex;
