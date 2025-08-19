@@ -1,5 +1,3 @@
-Live: https://a2rp.github.io/blog
-
 # Ashish’s Tech Blog
 
 I used to blog on Blogger back in the day, and I'm writing **weekly again since January 2025**.
@@ -15,5 +13,13 @@ I used to blog on Blogger back in the day, and I'm writing **weekly again since 
 -   A **file-based blog** — each post is a React component with exported `meta` (title, date, tags, excerpt, cover).
 -   Built with **React + Vite + styled-components**, deployed on **GitHub Pages**.
 -   No CMS. Content lives in the repo → easy diffs, PR reviews, and instant deploys.
+-   **One post every week** starting **January 2025**.
 
-Folder of posts:
+---
+
+## Local dev
+
+```bash
+npm i
+npm run dev
+```
