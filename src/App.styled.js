@@ -33,7 +33,7 @@ export const Styled = {
         font-size: 18px;
         font-weight: 500;
         &.active {
-            color: orangered;
+            color: lightcoral;
         }
     `,
     Main: styled.main`

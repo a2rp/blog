@@ -43,8 +43,8 @@ export default function Blog() {
             <Styled.Wrapper>
                 <Styled.Main>
                     <h2>Post not found</h2>
-                    <p>We couldn’t find “{slug}”. Check that file name and <code>meta.slug</code> match.</p>
-                    <Link to="/">← Back to all posts</Link>
+                    <p>We couldn't find "{slug}". Check that file name and <code>meta.slug</code> match.</p>
+                    <NavLink to="/">← Back to all posts</NavLink>
                 </Styled.Main>
             </Styled.Wrapper>
         );
@@ -84,12 +84,12 @@ export default function Blog() {
                         <NavLink to={`/${prev.slug}`} title={prev.title}>
                             Prev: {prev.title}
                         </NavLink>
-                    ) : <span />}
+                    ) : ""}
                     {next ? (
                         <NavLink to={`/${next.slug}`} title={next.title}>
                             Next: {next.title}
                         </NavLink>
-                    ) : <span />}
+                    ) : ""}
                 </div>
 
                 <div className="morePostsWrapper">

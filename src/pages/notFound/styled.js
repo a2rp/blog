@@ -43,8 +43,8 @@ export const Styled = {
     `,
     Button: styled.button`
         appearance: none;
-        border: 1px solid orangered;
-        background: orangered;
+        border: 1px solid lightcoral;
+        background: lightcoral;
         color: #fff;
         padding: 10px 16px;
         border-radius: 12px;

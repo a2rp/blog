@@ -18,7 +18,7 @@ export const Styled = {
             margin-bottom: 30px;
 
             b {
-                color: orangered;
+                color: lightcoral;
                 margin-top: 15px;
                 display: block;
             }

@@ -14,7 +14,7 @@ export default function ScrollToTop({ smooth = true }) {
     }, []);
 
     useEffect(() => {
-        // If there’s a #hash, prefer scrolling to that element
+        // If there's a #hash, prefer scrolling to that element
         if (hash) {
             const el = document.querySelector(hash);
             if (el) {

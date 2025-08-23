@@ -1,4 +1,4 @@
-# Ashish’s Tech Blog
+# Ashish's Tech Blog
 
 I used to blog on Blogger back in the day, and I'm writing **weekly again since January 2025**.
 

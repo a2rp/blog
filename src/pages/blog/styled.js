@@ -10,6 +10,16 @@ export const Styled = {
         width: 100%;
         max-width: 1200px;
 
+        a {
+            color: lightcoral;
+            text-decoration: none;
+            padding: 5px;
+            border-bottom: 1px solid lightcoral;
+            &:hover {
+                border-bottom: none;
+            }
+        }
+
         .goBackLink {
             background-color: #111;
             border: 1px solid #333;
@@ -30,7 +40,7 @@ export const Styled = {
             display: flex;
             align-items: flex-start;
             justify-content: space-between;
-            flex-wrap: wrap;
+            /* flex-wrap: wrap; */
             gap: 30px;
             margin-bottom: 100px;
             padding: 15px;
@@ -77,7 +87,7 @@ export const Styled = {
 
                     .postDate {
                         font-size: 12px;
-                        color: orangered;
+                        color: lightcoral;
                     }
                 }
             }
@@ -91,7 +101,7 @@ export const Styled = {
             margin-bottom: 30px;
 
             b {
-                color: orangered;
+                color: lightcoral;
                 margin-top: 15px;
                 display: block;
             }

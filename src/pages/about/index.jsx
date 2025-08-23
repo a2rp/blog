@@ -13,7 +13,7 @@ const About = () => {
                         My core stack is React (Vite) + Node/Express + MongoDB, styled with styled-components, integrated with Cloudinary and Stripe/Razorpay, and deployed via GitHub Pages/Actions, Netlify, Render, or Firebase.
                     </p>
                     <p>
-                        I work with a “ship → measure → iterate” mindset: get the essentials live, watch real metrics, and improve quickly. I prioritize performance, accessibility, security, predictable APIs, and straightforward code reviews.
+                        I work with a "ship → measure → iterate" mindset: get the essentials live, watch real metrics, and improve quickly. I prioritize performance, accessibility, security, predictable APIs, and straightforward code reviews.
                     </p>
 
                     <h3>What I bring</h3>

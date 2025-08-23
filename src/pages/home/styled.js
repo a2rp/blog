@@ -87,14 +87,16 @@ export const Styled = {
 
         a {
             text-decoration: none;
-            color: orangered;
+            color: lightseagreen;
+            padding: 3px;
             &:hover {
-                text-decoration: underline;
+                border-bottom: 1px solid lightcoral;
             }
         }
 
         .date {
             font-size: 12px;
+            color: lightcoral;
         }
     `,
     Title: styled.h3`
