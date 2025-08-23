@@ -1,4 +1,4 @@
-import{d as e,a as r,j as n,N as a}from"./index-ElV9W-F9.js";const t={Wrapper:e.div`
+import{d as e,a as r,j as t,N as a}from"./index-DPMN5tv2.js";const n={Wrapper:e.div`
         background-color: #111;
         padding: 15px;
         display: flex;
@@ -34,8 +34,8 @@ import{d as e,a as r,j as n,N as a}from"./index-ElV9W-F9.js";const t={Wrapper:e.
         }
     `,Button:e.button`
         appearance: none;
-        border: 1px solid orangered;
-        background: orangered;
+        border: 1px solid lightcoral;
+        background: lightcoral;
         color: #fff;
         padding: 10px 16px;
         border-radius: 12px;
@@ -85,4 +85,4 @@ import{d as e,a as r,j as n,N as a}from"./index-ElV9W-F9.js";const t={Wrapper:e.
         margin-top: 28px;
         font-size: 13px;
         color: #777;
-    `},s=()=>{const o=r();return n.jsx(t.Wrapper,{role:"main","aria-labelledby":"nf-title",children:n.jsxs(t.Inner,{children:[n.jsx(t.Code,{children:"404"}),n.jsx(t.Title,{id:"nf-title",children:"Page not found"}),n.jsx(t.Subtitle,{children:"The page you're looking for may have moved, been renamed, or never existed."}),n.jsxs(t.Actions,{children:[n.jsx(t.Button,{onClick:()=>o(-1),"aria-label":"Go back",children:"Go back"}),n.jsx(a,{to:"/",children:n.jsx(t.Button,{as:"span",children:"Go home"})})]}),n.jsx(t.Small,{children:"Availability: Open to full-time roles (Bengaluru/remote) & select freelance projects."})]})})};export{s as default};
+    `},l=()=>{const o=r();return t.jsx(n.Wrapper,{role:"main","aria-labelledby":"nf-title",children:t.jsxs(n.Inner,{children:[t.jsx(n.Code,{children:"404"}),t.jsx(n.Title,{id:"nf-title",children:"Page not found"}),t.jsx(n.Subtitle,{children:"The page you're looking for may have moved, been renamed, or never existed."}),t.jsxs(n.Actions,{children:[t.jsx(n.Button,{onClick:()=>o(-1),"aria-label":"Go back",children:"Go back"}),t.jsx(a,{to:"/",children:t.jsx(n.Button,{as:"span",children:"Go home"})})]}),t.jsx(n.Small,{children:"Availability: Open to full-time roles (Bengaluru/remote) & select freelance projects."})]})})};export{l as default};
