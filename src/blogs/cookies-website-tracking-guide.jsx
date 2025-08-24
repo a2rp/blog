@@ -6,7 +6,7 @@ export const meta = {
     date: "2025-01-28",
     author: "Ashish Ranjan - Full-Stack Developer",
     category: "How The Internet Works",
-    tags: ["Cookies", "Privacy", "Tracking", "Web Browsing", "Personalization"],
+    tags: ["Privacy", "Web Basics", "Platforms"],
     excerpt: "Those 'Accept Cookies' pop-ups are everywhere. But what are you actually accepting? Let's break down what cookies really are, why they exist, and what it means for your privacy.",
     cover: null,
 };

@@ -6,7 +6,7 @@ export const meta = {
     date: "2025-02-25",
     author: "Ashish Ranjan - Full-Stack Developer",
     category: "Behind The Digital Curtain",
-    tags: ["Algorithms", "Recommendations", "Machine Learning", "User Experience", "Personalization"],
+    tags: ["AI", "Platforms", "UX"],
     excerpt: "It feels like magic when Netflix suggests the perfect show or Spotify creates a playlist that reads your mind. But it's not magic—it's a fascinating blend of math, data, and clever design meant to keep you watching and listening.",
     cover: null,
 };

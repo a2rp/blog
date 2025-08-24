@@ -6,7 +6,7 @@ export const meta = {
     date: "2025-03-17",
     author: "Ashish Ranjan - Full-Stack Developer",
     category: "Behind The Digital Curtain",
-    tags: ["Performance", "Web Development", "User Experience", "Technical Debt", "Software Engineering"],
+    tags: ["Performance", "UX", "DevOps"],
     excerpt: "You've felt it. The frustrating lag, the unresponsive button, the endless loading spinner. Speed isn't an accident—it's a constant, difficult battle fought by developers against an ever-growing pile of features.",
     cover: null,
 };

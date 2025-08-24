@@ -6,7 +6,7 @@ export const meta = {
     date: "2025-04-21",
     author: "Ashish Ranjan - Full-Stack Developer",
     category: "Demystifying Tech Trends",
-    tags: ["Behavior Design", "Social Media", "UX", "Attention Economy", "Digital Wellbeing"],
+    tags: ["UX", "Platforms", "AI"],
     excerpt:
         "Endless feeds, streaks, and push-notifications aren't accidents—they're product decisions. Here's a friendly teardown of the design patterns that keep us glued to screens, plus practical ways to take back control.",
     cover: null,

@@ -6,7 +6,7 @@ export const meta = {
     date: "2025-05-05",
     author: "Ashish Ranjan - Full-Stack Developer",
     category: "Practical Tech Skills",
-    tags: ["Privacy", "Security", "Backups", "Productivity", "Digital Hygiene"],
+    tags: ["Privacy", "Security", "Backups"],
     excerpt:
         "Quick, high-impact steps to protect accounts, cut noise, and back up what matters. No jargon—just a focused checklist you can finish in an hour.",
     cover: null,

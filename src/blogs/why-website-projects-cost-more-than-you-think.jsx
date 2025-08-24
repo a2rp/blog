@@ -6,7 +6,7 @@ export const meta = {
     date: "2025-03-31",
     author: "Ashish Ranjan - Full-Stack Developer",
     category: "Behind The Digital Curtain",
-    tags: ["Web Development", "Freelancing", "Project Management", "Pricing", "Business"],
+    tags: ["Web Basics", "UX", "DevOps"],
     excerpt: "That quote for a new website seems high for 'just putting some text and pictures online.' But beneath the visible surface lies an iceberg of planning, testing, and decisions that clients never see.",
     cover: null,
 };

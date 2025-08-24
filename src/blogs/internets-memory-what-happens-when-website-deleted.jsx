@@ -6,7 +6,7 @@ export const meta = {
     date: "2025-04-28",
     author: "Ashish Ranjan - Full-Stack Developer",
     category: "Demystifying Tech Trends",
-    tags: ["Web Archiving", "CDN", "Caching", "Backups", "Digital Footprint"],
+    tags: ["Web Basics", "Backups", "Cloud"],
     excerpt:
         "Hit delete and it's gone, right? Not on the internet. Here's where ‘deleted' websites linger—CDNs, caches, backups, and archives—and what both users and builders can do about it.",
     cover: null,

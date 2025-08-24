@@ -6,7 +6,7 @@ export const meta = {
     date: "2025-02-11",
     author: "Ashish Ranjan - Full-Stack Developer",
     category: "Digital Life & Security",
-    tags: ["Privacy", "Smart Devices", "Targeted Advertising", "Data Collection", "Microphones"],
+    tags: ["Privacy", "Platforms", "AI"],
     excerpt: "You talk about kayaking with a friend, and suddenly your phone shows you kayak ads. It feels like it's listening. The truth is both more complicated, and in a way, more concerning.",
     cover: null,
 };

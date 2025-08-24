@@ -6,7 +6,7 @@ export const meta = {
     date: "2025-06-02",
     author: "Ashish Ranjan - Full-Stack Developer",
     category: "A Look at Tech Culture & Careers",
-    tags: ["Career", "Software Development", "Web", "Teamwork", "DevOps"],
+    tags: ["Careers", "DevOps", "UX"],
     excerpt:
         "What does a web developer actually do all day? Here's a realistic, non-glam version—from morning triage and code reviews to shipping safely and sleeping at night.",
     cover: null,

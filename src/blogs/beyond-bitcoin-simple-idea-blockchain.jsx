@@ -6,7 +6,7 @@ export const meta = {
     date: "2025-04-14",
     author: "Ashish Ranjan - Full-Stack Developer",
     category: "Demystifying Tech Trends",
-    tags: ["Blockchain", "Cryptocurrency", "Decentralization", "Bitcoin", "Web3"],
+    tags: ["Blockchain", "Security", "Platforms"],
     excerpt: "Blockchain is so much more than cryptocurrency. At its heart, it's a surprisingly simple and powerful idea about trust and record-keeping. Let's break down how it works and why it might change more than just money.",
     cover: null,
 };

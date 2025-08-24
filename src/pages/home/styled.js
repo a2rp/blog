@@ -3,15 +3,27 @@ import styled from "styled-components";
 
 export const Styled = {
     Wrapper: styled.div`
+        /* border: 1px solid #f00; */
         display: flex;
         justify-content: center;
         min-height: 100vh;
         padding: 24px 0 60px;
+        max-width: 1000px;
+        margin: auto;
     `,
     Main: styled.div`
         width: 100%;
         max-width: 1200px;
         padding: 0 18px;
+    `,
+    Info: styled.div`
+        margin-bottom: 30px;
+        h1 {
+        }
+        p {
+        }
+        span {
+        }
     `,
     Head: styled.div`
         display: flex;
@@ -53,6 +65,36 @@ export const Styled = {
             cursor: pointer;
         }
     `,
+    FilterWrapper: styled.div`
+        /* border: 1px solid #f00; */
+        display: flex;
+        /* grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); */
+        justify-content: space-between;
+        gap: 15px;
+        margin: 10px 0 18px;
+        align-items: center;
+        flex-wrap: wrap;
+
+        select {
+            flex: 1 1 100px;
+            background-color: #000;
+            color: #aaa;
+            height: 30px;
+            padding: 0 5px;
+            border-radius: 6px;
+        }
+
+        .clearFilterButton {
+            padding: 3px 15px;
+            border-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            background: rgba(255, 255, 255, 0.06);
+            cursor: pointer;
+            color: #aaa;
+            white-space: nowrap;
+            height: 30px;
+        }
+    `,
     CardsWrapper: styled.div`
         display: flex;
         gap: 18px;
@@ -60,10 +102,14 @@ export const Styled = {
         flex-wrap: wrap;
     `,
     Card: styled.div`
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        /* border: 1px solid rgba(255, 255, 255, 0.1); */
+        /* border: 1px solid #f00; */
         background: rgba(255, 255, 255, 0.03);
         border-radius: 16px;
         overflow: hidden;
+        max-width: 300px;
+        height: 320px;
+        position: relative;
         transition: transform 0.2s ease, box-shadow 0.2s ease;
         &:hover {
             transform: translateY(-3px);
@@ -73,10 +119,13 @@ export const Styled = {
     `,
     Cover: styled.div`
         /* border: 1px solid #f00; */
-        height: 160px;
+        position: relative;
+        height: 320px;
         background: #111 center/cover no-repeat;
     `,
     TextWrapper: styled.div`
+        /* border: 1px solid #f00; */
+        height: 320px;
         padding: 15px;
     `,
     LinkDateWrapper: styled.div`

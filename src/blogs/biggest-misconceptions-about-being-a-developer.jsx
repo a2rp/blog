@@ -6,7 +6,7 @@ export const meta = {
     date: "2025-06-09",
     author: "Ashish Ranjan - Full-Stack Developer",
     category: "A Look at Tech Culture & Careers",
-    tags: ["Career", "Software Development", "Myths", "Teamwork", "Reality Check"],
+    tags: ["Careers", "DevOps", "UX"],
     excerpt:
         "Hoodies, neon terminals, and overnight 'genius' builds make great cinema—but bad career expectations. Here's what real software work looks like, and how to thrive in it.",
     cover: null,

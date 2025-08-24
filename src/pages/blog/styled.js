@@ -57,6 +57,8 @@ export const Styled = {
                 color: #aaa;
                 text-decoration: none;
                 max-width: 300px;
+                line-height: 2;
+
                 &:hover {
                     color: #fff;
                 }

@@ -6,7 +6,7 @@ export const meta = {
     date: "2025-01-14",
     author: "Ashish Ranjan - Full-Stack Developer",
     category: "How The Internet Works",
-    tags: ["Cloud Computing", "Servers", "AWS", "Data Storage", "Infrastructure"],
+    tags: ["Cloud", "DevOps", "Security"],
     excerpt: "We entrust our photos, emails, and files to 'the cloud' every day. But what is it, really? Let's pull back the curtain on the world's most powerful rental computer system.",
     cover: null,
 };

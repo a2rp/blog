@@ -6,7 +6,7 @@ export const meta = {
     date: "2025-05-26",
     author: "Ashish Ranjan - Full-Stack Developer",
     category: "Practical Tech Skills",
-    tags: ["Digital Footprint", "Privacy", "Careers", "Security", "Social Media"],
+    tags: ["Privacy", "Backups", "Platforms"],
     excerpt:
         "The internet never truly forgets. Here's how posts live on through screenshots, caches, data brokers, and backups—plus a simple pre-post checklist you can actually use.",
     cover: null,

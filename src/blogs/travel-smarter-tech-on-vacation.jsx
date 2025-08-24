@@ -6,7 +6,7 @@ export const meta = {
     date: "2025-07-07",
     author: "Ashish Ranjan - Full-Stack Developer",
     category: "Summer & Tech",
-    tags: ["Travel", "Offline Maps", "eSIM", "Privacy", "Photography", "Productivity"],
+    tags: ["Networking", "Privacy", "Backups"],
     excerpt:
         "Let tech be your sidekick, not your boss. A practical guide to staying connected, safe, and sane-maps, money, photos, power, and privacy-without turning your holiday into a second job.",
     cover: null,

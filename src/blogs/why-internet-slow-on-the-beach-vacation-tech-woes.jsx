@@ -6,7 +6,7 @@ export const meta = {
     date: "2025-07-21",
     author: "Ashish Ranjan - Full-Stack Developer",
     category: "Summer & Tech",
-    tags: ["Mobile Data", "Wi-Fi", "Roaming", "Performance", "Offline-First"],
+    tags: ["Networking", "Performance", "Hardware"],
     excerpt:
         "Crowds, heat, and weak hotel routers aren't a vibe for your phone. Here's a friendly, practical guide to getting usable internet on vacation—what actually slows you down and what to do about it.",
     cover: null,

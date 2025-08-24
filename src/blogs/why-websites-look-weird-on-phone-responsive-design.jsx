@@ -6,7 +6,7 @@ export const meta = {
     date: "2025-01-21",
     author: "Ashish Ranjan - Full-Stack Developer",
     category: "How The Internet Works",
-    tags: ["Responsive Design", "Web Development", "CSS", "Mobile", "User Experience"],
+    tags: ["UX", "Web Basics", "Accessibility"],
     excerpt: "Ever tried to read a website on your phone and had to play the pinch-and-zoom game? That's a failure of responsive design. Here's how the good websites get it right.",
     cover: null,
 };

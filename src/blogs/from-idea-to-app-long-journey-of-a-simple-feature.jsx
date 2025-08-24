@@ -6,7 +6,7 @@ export const meta = {
     date: "2025-06-16",
     author: "Ashish Ranjan - Full-Stack Developer",
     category: "A Look at Tech Culture & Careers",
-    tags: ["Product Development", "UX", "Engineering", "QA", "Release Management"],
+    tags: ["UX", "DevOps", "Accessibility"],
     excerpt:
         "“It's just a button.” Famous last words. Walk with me through how a small feature actually ships—from fuzzy idea to pixels in production—without breaking everything else.",
     cover: null,

@@ -6,7 +6,7 @@ export const meta = {
     date: "2025-05-12",
     author: "Ashish Ranjan - Full-Stack Developer",
     category: "Practical Tech Skills",
-    tags: ["Privacy", "Security", "Social Media", "Ad Personalization", "Account Safety"],
+    tags: ["Privacy", "Security", "Platforms"],
     excerpt:
         "A friendly, platform-agnostic checklist to make your social accounts safer and quieter—without disappearing from the internet.",
     cover: null,

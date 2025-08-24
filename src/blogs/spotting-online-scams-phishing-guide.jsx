@@ -6,7 +6,7 @@ export const meta = {
     date: "2025-02-18",
     author: "Ashish Ranjan - Full-Stack Developer",
     category: "Digital Life & Security",
-    tags: ["Phishing", "Scams", "Security", "Email", "Cyber Safety"],
+    tags: ["Security", "Privacy", "Web Basics"],
     excerpt: "That urgent email from 'your bank' looks real. The website it links to looks perfect. But it's all a trap. Learn the telltale signs developers look for to spot a phishing attempt from a mile away.",
     cover: null,
 };

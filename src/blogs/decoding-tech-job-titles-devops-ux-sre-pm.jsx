@@ -6,7 +6,7 @@ export const meta = {
     date: "2025-06-30",
     author: "Ashish Ranjan - Full-Stack Developer",
     category: "A Look at Tech Culture & Careers",
-    tags: ["Careers", "Job Titles", "DevOps", "UX", "SRE", "Product Management"],
+    tags: ["Careers", "DevOps", "UX"],
     excerpt:
         "Tech job titles can feel like alphabet soup. Here’s a plain-English decoder ring—who does what, how roles overlap, and which path might fit you.",
     cover: null,

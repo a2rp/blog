@@ -6,7 +6,7 @@ export const meta = {
     date: "2025-06-23",
     author: "Ashish Ranjan - Full-Stack Developer",
     category: "A Look at Tech Culture & Careers",
-    tags: ["Open Source", "GitHub", "Licenses", "Community", "Collaboration"],
+    tags: ["Open Source", "Careers", "DevOps"],
     excerpt:
         "From your browser to your backend, open source quietly powers the stack. Here’s how it actually works, why companies rely on it, and how you can start contributing—even without writing a single line of code.",
     cover: null,

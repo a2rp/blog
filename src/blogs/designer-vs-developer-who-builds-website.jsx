@@ -6,7 +6,7 @@ export const meta = {
     date: "2025-03-03",
     author: "Ashish Ranjan - Full-Stack Developer",
     category: "Behind The Digital Curtain",
-    tags: ["Web Design", "Web Development", "Collaboration", "UX", "Careers in Tech"],
+    tags: ["UX", "Careers", "Web Basics"],
     excerpt: "It's the classic tech duo. One is obsessed with pixels and user flow. The other is obsessed with code and performance. Here's how these two very different roles combine to create the sites you use every day.",
     cover: null,
 };

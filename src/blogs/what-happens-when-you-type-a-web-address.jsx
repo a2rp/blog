@@ -6,7 +6,7 @@ export const meta = {
     date: "2025-01-07",
     author: "Ashish Ranjan - Full-Stack Developer",
     category: "How The Internet Works",
-    tags: ["DNS", "TLS/SSL", "HTTP", "Browser", "Servers", "Networking"],
+    tags: ["Web Basics", "Networking", "Security"],
     excerpt:
         "A restaurant-style tour of DNS lookups, TLS handshakes, HTTP requests, servers, and the browser render pipeline—what really happens after you hit Enter.",
     cover: null, // no images

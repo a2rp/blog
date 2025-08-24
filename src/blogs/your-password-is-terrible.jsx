@@ -6,7 +6,7 @@ export const meta = {
     date: "2025-02-04",
     author: "Ashish Ranjan - Full-Stack Developer",
     category: "Digital Life & Security",
-    tags: ["Passwords", "Security", "Privacy", "Password Managers", "Cybersecurity"],
+    tags: ["Security", "Privacy", "Web Basics"],
     excerpt: "Let's be honest, you've used 'password123' more than once. It's not your fault—remembering dozens of passwords is impossible. Here's why weak passwords are a problem and what you can actually do about it.",
     cover: null,
 };

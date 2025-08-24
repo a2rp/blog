@@ -6,7 +6,7 @@ export const meta = {
     date: "2025-03-10",
     author: "Ashish Ranjan - Full-Stack Developer",
     category: "Behind The Digital Curtain",
-    tags: ["Software Development", "Updates", "Bugs", "Testing", "Agile"],
+    tags: ["DevOps", "UX", "Performance"],
     excerpt: "That annoying 'update required' notification pops up all the time. What's actually in there? From squashing bugs to building new features, here's the messy, collaborative process of how software grows and improves.",
     cover: null,
 };

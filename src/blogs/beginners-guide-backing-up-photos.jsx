@@ -6,7 +6,8 @@ export const meta = {
     date: "2025-05-19",
     author: "Ashish Ranjan - Full-Stack Developer",
     category: "Practical Tech Skills",
-    tags: ["Backups", "Photos", "Cloud Storage", "3-2-1 Rule", "Family Sharing"],
+    tags: ["Backups", "Cloud", "Platforms"]
+    ,
     excerpt:
         "Phones get lost, drives fail, and accounts lock you out. Here's a friendly, no-jargon plan to keep your memories safe—with simple defaults you can set up in one hour.",
     cover: null,

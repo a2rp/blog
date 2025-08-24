@@ -6,7 +6,7 @@ export const meta = {
     date: "2025-07-14",
     author: "Ashish Ranjan - Full-Stack Developer",
     category: "Summer & Tech",
-    tags: ["VFX", "Virtual Production", "Motion Capture", "Rendering", "Sound Design", "Color Grading"],
+    tags: ["Media Tech", "Hardware", "Performance"],
     excerpt:
         "Explosions, aliens, and impossible chases aren't just 'CGI'. Modern movies blend virtual production, motion capture, physics sims, color science, and sound tech to make the magic feel real.",
     cover: null,
