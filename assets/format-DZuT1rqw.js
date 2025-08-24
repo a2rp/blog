@@ -1,7 +1,7 @@
-import{d as O,j as e}from"./index-Cj5vZgxu.js";const s={Wrapper:O.article`
+import{d as O,j as e}from"./index-DsiViyQs.js";const s={Wrapper:O.article`
         color: #e0e0e0;
-        max-width: 900px;
-        margin: 40px auto;
+        /* max-width: 1000px; */
+        /* margin: 40px auto; */
         padding: 20px;
         font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
             Roboto, sans-serif;
