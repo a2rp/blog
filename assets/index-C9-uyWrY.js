@@ -1,4 +1,4 @@
-import{d as i,j as e}from"./index-CfXFlb3f.js";const s={Wrapper:i.div`
+import{d as i,j as e}from"./index-Cj5vZgxu.js";const s={Wrapper:i.div`
         display: flex;
         justify-content: center;
         align-items: center;

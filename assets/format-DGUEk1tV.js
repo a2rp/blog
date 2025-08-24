@@ -1,4 +1,4 @@
-import{d as O,j as e}from"./index-CfXFlb3f.js";const s={Wrapper:O.article`
+import{d as O,j as e}from"./index-Cj5vZgxu.js";const s={Wrapper:O.article`
         color: #e0e0e0;
         max-width: 900px;
         margin: 40px auto;
