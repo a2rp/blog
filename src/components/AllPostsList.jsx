@@ -8,7 +8,7 @@ export default function AllPostsList() {
     return (
         <Styled.Wrapper>
             <nav aria-label="All Posts">
-                <ul style={{ border: "0px solid #f00", height: "100%", listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 6 }}>
+                <ul style={{ border: "0px solid #f00", height: "100%", listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 6, fontSize: 12, fontStyle: "italic" }}>
                     <li>
                         <NavLink
                             to="/ai-101-how-you-already-use-it-every-day"

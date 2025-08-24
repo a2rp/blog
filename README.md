@@ -1,25 +1,38 @@
-# Ashish's Tech Blog
+# a2rp Blogs
 
-I used to blog on Blogger back in the day, and I'm writing **weekly again since January 2025**.
+> Tech, explained on Sundays - plain-English posts on AI, privacy, networking, UX, and the messy reality of building software.
 
--   **Live site:** <a href="https://a2rp.github.io/blog/" target="_blank" rel="noopener noreferrer">https://a2rp.github.io/blog/</a>
--   **Older archives (Blogger):** <a href="https://passion4profession.blogspot.com/" target="_blank" rel="noopener noreferrer">passion4profession.blogspot.com</a>
--   **Portfolio:** <a href="https://www.ashishranjan.net/" target="_blank" rel="noopener noreferrer">ashishranjan.net</a>
-
----
-
-## What this is
-
--   A **file-based blog** — each post is a React component with exported `meta` (title, date, tags, excerpt, cover).
--   Built with **React + Vite + styled-components**, deployed on **GitHub Pages**.
--   No CMS. Content lives in the repo → easy diffs, PR reviews, and instant deploys.
--   **One post every week** starting **January 2025**.
+**Live site:** https://a2rp.github.io/blog/
+**Repo:** https://github.com/a2rp/blog
 
 ---
 
-## Local dev
+## Features
+
+-   🔎 **Search + Filters**: full-text search; filter by Year / Month / Category / Tag; sort Newest/Oldest.
+-   🏷️ **Consistent tags**: normalized tag set for better filtering/related posts.
+-   🖼️ **Covers**: per-post hero image with lazy loading + fallback.
+-   ⬆️ **Scroll-to-Top FAB**: reduced-motion aware, accessible.
+-   📚 **Manual "All Posts" list**: simple `<ul><li><NavLink/></li></ul>` sidebar component.
+
+---
+
+## Getting Started
 
 ```bash
+# clone
+git clone https://github.com/a2rp/blog
+cd blog
+
+# install
 npm i
+
+# dev
 npm run dev
+
+# build
+npm run build
+
+# preview build
+npm run preview
 ```
