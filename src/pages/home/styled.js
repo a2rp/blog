@@ -108,7 +108,7 @@ export const Styled = {
         border-radius: 16px;
         overflow: hidden;
         max-width: 300px;
-        height: 320px;
+        height: 450px;
         position: relative;
         transition: transform 0.2s ease, box-shadow 0.2s ease;
         &:hover {
@@ -120,12 +120,12 @@ export const Styled = {
     Cover: styled.div`
         /* border: 1px solid #f00; */
         position: relative;
-        height: 320px;
+        height: 140px;
         background: #111 center/cover no-repeat;
     `,
     TextWrapper: styled.div`
         /* border: 1px solid #f00; */
-        height: 320px;
+        height: 420px;
         padding: 15px;
     `,
     LinkDateWrapper: styled.div`

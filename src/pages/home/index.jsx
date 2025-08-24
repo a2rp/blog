@@ -226,7 +226,7 @@ export default function Home() {
                                             background: "rgba(255,255,255,0.03)",
                                         }}
                                     >
-                                        {/* <Styled.Cover style={{ background: `#111 url(${p.cover}) center/cover no-repeat` }} /> */}
+                                        <Styled.Cover style={{ background: `#111 url(${p.cover}) center/cover no-repeat` }} />
 
                                         <Styled.TextWrapper>
                                             <Styled.Title title={p.title}>{p.title}</Styled.Title>

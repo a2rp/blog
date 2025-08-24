@@ -3,6 +3,7 @@ import { lazy, Suspense } from 'react'
 import { NavLink, Route, Routes } from 'react-router-dom'
 import { Styled } from './App.styled'
 import ScrollToTop from './components/ScrollToTop'
+import ScrollToTopButton from './components/ScrollToTopButton'
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 
@@ -17,7 +18,7 @@ const App = () => {
             <Styled.Wrapper>
                 <Styled.Header>
                     <Styled.HeaderMain>
-                        <Styled.NavLink to="/">Blogs</Styled.NavLink>
+                        <Styled.NavLink to="/">a2rp Blogs</Styled.NavLink>
                         <Styled.NavLink to="/about">About</Styled.NavLink>
                     </Styled.HeaderMain>
                 </Styled.Header>
@@ -50,6 +51,7 @@ const App = () => {
                     </Styled.FooterMain>
                 </Styled.Footer>
             </Styled.Wrapper>
+            <ScrollToTopButton threshold={100} />
         </>
     )
 }

@@ -28,12 +28,12 @@ export const Styled = {
         }
     `,
     NavLink: styled(NavLink)`
-        color: #fff;
+        color: #666;
         text-decoration: none;
         font-size: 18px;
         font-weight: 500;
         &.active {
-            color: lightcoral;
+            color: white;
         }
     `,
     Main: styled.main`
