@@ -1,4 +1,5 @@
 import { Styled } from "./styled";
+import decoding_tech_job_titles_devops_ux_sre_pm from "../assets/covers/decoding-tech-job-titles-devops-ux-sre-pm.png";
 
 export const meta = {
     title: `Why Do Tech Companies Have So Many Weird Job Titles? (Decoding "DevOps," "UX," etc.)`,
@@ -9,7 +10,7 @@ export const meta = {
     tags: ["Careers", "DevOps", "UX"],
     excerpt:
         "Tech job titles can feel like alphabet soup. Here’s a plain-English decoder ring—who does what, how roles overlap, and which path might fit you.",
-    cover: null,
+    cover: decoding_tech_job_titles_devops_ux_sre_pm,
 };
 
 export default function Post() {
@@ -21,6 +22,8 @@ export default function Post() {
                 <div><b>Published on:</b> June 30, 2025</div>
                 <div><b>Category:</b> {meta.category}</div>
             </Styled.Info>
+
+            <img src={meta.cover} alt={meta.title} style={{ height: "600px", width: "100%", marginBottom: "15px" }} />
 
             <p>
                 “We’re hiring a Senior Staff Platform Engineer (DevEx) to partner with SRE, PM, and UX.” If that sentence

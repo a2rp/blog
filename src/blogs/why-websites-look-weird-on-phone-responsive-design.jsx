@@ -1,4 +1,5 @@
 import { Styled } from "./styled";
+import why_websites_look_weird_on_phone_responsive_design from "../assets/covers/why-websites-look-weird-on-phone-responsive-design.png";
 
 export const meta = {
     title: "Why Does This Website Look Weird on My Phone? An Intro to Responsive Design",
@@ -8,7 +9,7 @@ export const meta = {
     category: "How The Internet Works",
     tags: ["UX", "Web Basics", "Accessibility"],
     excerpt: "Ever tried to read a website on your phone and had to play the pinch-and-zoom game? That's a failure of responsive design. Here's how the good websites get it right.",
-    cover: null,
+    cover: why_websites_look_weird_on_phone_responsive_design,
 };
 
 export default function Post() {
@@ -20,6 +21,8 @@ export default function Post() {
                 <div><b>Published on:</b> January 21, 2025</div>
                 <div><b>Category:</b> How The Internet Works</div>
             </Styled.Info>
+
+            <img src={meta.cover} alt={meta.title} style={{ height: "600px", width: "100%", marginBottom: "15px" }} />
 
             <p>
                 I have a confession. The other day, I was waiting for a friend at a cafe and made the mistake of trying to pay a bill on a website that was, to put it nicely, not built for phones. I spent a full minute pinching and zooming, trying to tap a microscopic "Submit" button, and eventually gave up in frustration.

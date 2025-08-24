@@ -1,4 +1,5 @@
 import { Styled } from "./styled";
+import beginners_guide_backing_up_photos from "../assets/covers/beginners-guide-backing-up-photos.png";
 
 export const meta = {
     title: "Don't Get Locked Out! The Beginner's Guide to Backing Up Your Digital Photos",
@@ -10,7 +11,7 @@ export const meta = {
     ,
     excerpt:
         "Phones get lost, drives fail, and accounts lock you out. Here's a friendly, no-jargon plan to keep your memories safe—with simple defaults you can set up in one hour.",
-    cover: null,
+    cover: beginners_guide_backing_up_photos,
 };
 
 export default function Post() {
@@ -22,6 +23,8 @@ export default function Post() {
                 <div><b>Published on:</b> May 19, 2025</div>
                 <div><b>Category:</b> {meta.category}</div>
             </Styled.Info>
+
+            <img src={meta.cover} alt={meta.title} style={{ height: "600px", width: "100%", marginBottom: "15px" }} />
 
             <p>
                 If your phone vanished right now, how many photos would you lose—baby pics, vacations, old friends?

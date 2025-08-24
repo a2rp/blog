@@ -1,4 +1,5 @@
 import { Styled } from "./styled";
+import what_does_beta_actually_mean_peek_into_software_testing from "../assets/covers/what-does-beta-actually-mean-peek-into-software-testing.png";
 
 export const meta = {
     title: `What Does "Beta" Actually Mean? A Peek into Software Testing`,
@@ -9,7 +10,7 @@ export const meta = {
     tags: ["DevOps", "UX", "Performance"],
     excerpt:
         "Alpha, beta, RC… who makes up these labels and why do apps wear them? A friendly tour of how teams test software, what 'beta' really signals, and how you can try new features without being a guinea pig.",
-    cover: null,
+    cover: what_does_beta_actually_mean_peek_into_software_testing,
 };
 
 export default function Post() {
@@ -21,6 +22,8 @@ export default function Post() {
                 <div><b>Published on:</b> March 24, 2025</div>
                 <div><b>Category:</b> {meta.category}</div>
             </Styled.Info>
+
+            <img src={meta.cover} alt={meta.title} style={{ height: "600px", width: "100%", marginBottom: "15px" }} />
 
             <p>
                 You've seen the label: <em>Beta</em>. Sometimes it means “almost ready.” Sometimes it means

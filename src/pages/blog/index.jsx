@@ -2,6 +2,7 @@ import React, { Suspense, useEffect, useMemo } from "react";
 import { Link, NavLink, useNavigate, useParams } from "react-router-dom";
 import { Styled } from "./styled";
 import { formatDate } from "../../utils/format"; // optional: pretty dates
+import { Box, CircularProgress } from "@mui/material";
 
 // Lazy loaders for components
 const loaders = import.meta.glob("../../blogs/*.jsx");
@@ -75,9 +76,26 @@ export default function Blog() {
                     ← Back
                 </NavLink>
 
-                <Suspense fallback={<p>Loading…</p>}>
-                    <PostComp />
-                </Suspense>
+                <div className="absolutePrev">
+                    {prev ? (
+                        <NavLink to={`/${prev.slug}`} title={prev.title}>
+                            Prev
+                        </NavLink>
+                    ) : ""}
+                </div>
+                <div className="absoluteNext">
+                    {next ? (
+                        <NavLink to={`/${next.slug}`} title={next.title}>
+                            Next
+                        </NavLink>
+                    ) : ""}
+                </div>
+
+                <div style={{ border: "0px solid #f00", minHeight: "100vh", position: "relative" }}>
+                    <Suspense fallback={<Box sx={{ position: "absolute", width: "100vw", height: "100vh", displa: "flex", alignItems: "center", justifyContent: "center" }}><CircularProgress /></Box>}>
+                        <PostComp />
+                    </Suspense>
+                </div>
 
                 <div className="prevNextWrapper">
                     {prev ? (

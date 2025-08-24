@@ -1,4 +1,5 @@
 import { Styled } from "./styled";
+import cookies_website_tracking_guide from "../assets/covers/cookies-website-tracking-guide.png";
 
 export const meta = {
     title: "Cookies Aren't Just for Eating: A Simple Guide to Website Tracking",
@@ -8,7 +9,7 @@ export const meta = {
     category: "How The Internet Works",
     tags: ["Privacy", "Web Basics", "Platforms"],
     excerpt: "Those 'Accept Cookies' pop-ups are everywhere. But what are you actually accepting? Let's break down what cookies really are, why they exist, and what it means for your privacy.",
-    cover: null,
+    cover: cookies_website_tracking_guide,
 };
 
 export default function Post() {
@@ -20,6 +21,8 @@ export default function Post() {
                 <div><b>Published on:</b> January 28, 2025</div>
                 <div><b>Category:</b> How The Internet Works</div>
             </Styled.Info>
+
+            <img src={meta.cover} alt={meta.title} style={{ height: "600px", width: "100%", marginBottom: "15px" }} />
 
             <p>
                 It's the modern version of "agreeing to the terms and conditions." You land on a website, and before you can even see the content, a box pops up: "We use cookies to enhance your experience..." You sigh, scan for the biggest "Accept All" button you can find, and click it to make it go away.

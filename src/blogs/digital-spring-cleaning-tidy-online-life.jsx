@@ -1,4 +1,5 @@
 import { Styled } from "./styled";
+import digital_spring_cleaning_tidy_online_life from "../assets/covers/digital-spring-cleaning-tidy-online-life.png";
 
 export const meta = {
     title: "Digital Spring Cleaning: 5 Things You Can Do Today to Tidy Your Online Life",
@@ -9,7 +10,7 @@ export const meta = {
     tags: ["Privacy", "Security", "Backups"],
     excerpt:
         "Quick, high-impact steps to protect accounts, cut noise, and back up what matters. No jargon—just a focused checklist you can finish in an hour.",
-    cover: null,
+    cover: digital_spring_cleaning_tidy_online_life,
 };
 
 export default function Post() {
@@ -21,6 +22,8 @@ export default function Post() {
                 <div><b>Published on:</b> May 5, 2025</div>
                 <div><b>Category:</b> {meta.category}</div>
             </Styled.Info>
+
+            <img src={meta.cover} alt={meta.title} style={{ height: "600px", width: "100%", marginBottom: "15px" }} />
 
             <p>
                 Spring cleaning isn't just for closets. Your digital life gathers dust too—unused apps, noisy notifications,

@@ -1,4 +1,6 @@
 import { Styled } from "./styled";
+import are_you_addicted_how_apps_keep_you_scrolling from "../assets/covers/are-you-addicted-how-apps-keep-you-scrolling.png";
+
 
 export const meta = {
     title: "Are You Addicted to Your Phone? How Apps Are Designed to Keep You Scrolling",
@@ -9,7 +11,7 @@ export const meta = {
     tags: ["UX", "Platforms", "AI"],
     excerpt:
         "Endless feeds, streaks, and push-notifications aren't accidents—they're product decisions. Here's a friendly teardown of the design patterns that keep us glued to screens, plus practical ways to take back control.",
-    cover: null,
+    cover: are_you_addicted_how_apps_keep_you_scrolling,
 };
 
 export default function Post() {
@@ -21,6 +23,8 @@ export default function Post() {
                 <div><b>Published on:</b> April 21, 2025</div>
                 <div><b>Category:</b> {meta.category}</div>
             </Styled.Info>
+
+            <img src={meta.cover} alt={meta.title} style={{ height: "600px", width: "100%", marginBottom: "15px" }} />
 
             <p>
                 Be honest: how often do you unlock your phone without knowing why? You meant to check one message,

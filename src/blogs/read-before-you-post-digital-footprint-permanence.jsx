@@ -1,4 +1,5 @@
 import { Styled } from "./styled";
+import read_before_you_post_digital_footprint_permanence from "../assets/covers/read-before-you-post-digital-footprint-permanence.png";
 
 export const meta = {
     title: "Read This Before You Post: The Permanence of Your Digital Footprint",
@@ -9,7 +10,7 @@ export const meta = {
     tags: ["Privacy", "Backups", "Platforms"],
     excerpt:
         "The internet never truly forgets. Here's how posts live on through screenshots, caches, data brokers, and backups—plus a simple pre-post checklist you can actually use.",
-    cover: null,
+    cover: read_before_you_post_digital_footprint_permanence,
 };
 
 export default function Post() {
@@ -21,6 +22,8 @@ export default function Post() {
                 <div><b>Published on:</b> May 26, 2025</div>
                 <div><b>Category:</b> {meta.category}</div>
             </Styled.Info>
+
+            <img src={meta.cover} alt={meta.title} style={{ height: "600px", width: "100%", marginBottom: "15px" }} />
 
             <p>
                 We love the “delete” button because it feels like an undo. Post → regret → delete → peace. Except that's

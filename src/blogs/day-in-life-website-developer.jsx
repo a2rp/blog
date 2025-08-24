@@ -1,4 +1,5 @@
 import { Styled } from "./styled";
+import day_in_life_website_developer from "../assets/covers/day-in-life-website-developer.png";
 
 export const meta = {
     title: "A Day in the Life of a Website Developer (No, It's Not Just Coffee)",
@@ -9,7 +10,7 @@ export const meta = {
     tags: ["Careers", "DevOps", "UX"],
     excerpt:
         "What does a web developer actually do all day? Here's a realistic, non-glam version—from morning triage and code reviews to shipping safely and sleeping at night.",
-    cover: null,
+    cover: day_in_life_website_developer,
 };
 
 export default function Post() {
@@ -21,6 +22,8 @@ export default function Post() {
                 <div><b>Published on:</b> June 2, 2025</div>
                 <div><b>Category:</b> {meta.category}</div>
             </Styled.Info>
+
+            <img src={meta.cover} alt={meta.title} style={{ height: "600px", width: "100%", marginBottom: "15px" }} />
 
             <p>
                 Movies show developers hammering keyboards at 2 a.m. while green code rains down the screen.

@@ -1,4 +1,5 @@
 import { Styled } from "./styled";
+import beyond_bitcoin_simple_idea_blockchain from "../assets/covers/beyond-bitcoin-simple-idea-blockchain.png";
 
 export const meta = {
     title: "Beyond Bitcoin: The Simple Idea Behind Blockchain",
@@ -8,7 +9,7 @@ export const meta = {
     category: "Demystifying Tech Trends",
     tags: ["Blockchain", "Security", "Platforms"],
     excerpt: "Blockchain is so much more than cryptocurrency. At its heart, it's a surprisingly simple and powerful idea about trust and record-keeping. Let's break down how it works and why it might change more than just money.",
-    cover: null,
+    cover: beyond_bitcoin_simple_idea_blockchain,
 };
 
 export default function Post() {
@@ -20,6 +21,8 @@ export default function Post() {
                 <div><b>Published on:</b> April 14, 2025</div>
                 <div><b>Category:</b> Demystifying Tech Trends</div>
             </Styled.Info>
+
+            <img src={meta.cover} alt={meta.title} style={{ height: "600px", width: "100%", marginBottom: "15px" }} />
 
             <p>
                 A few years ago, during the peak of the crypto craze, a relative asked me to explain Bitcoin. I launched into a technical monologue about mining, hashes, and distributed ledgers. Their eyes glazed over within seconds. I had failed.

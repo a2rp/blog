@@ -1,4 +1,5 @@
 import { Styled } from "./styled";
+import laptop_buying_guide_normal_people from "../assets/covers/laptop-buying-guide-normal-people.png";
 
 export const meta = {
     title: "The Laptop Buying Guide for Normal People (Not Geeks)",
@@ -9,7 +10,7 @@ export const meta = {
     tags: ["Hardware", "Performance", "Platforms"],
     excerpt:
         "No alphabet soup, no fan wars. A simple way to choose a laptop you'll love-based on what you actually do-plus clear spec targets and a printable checklist.",
-    cover: null,
+    cover: laptop_buying_guide_normal_people,
 };
 
 export default function Post() {
@@ -21,6 +22,8 @@ export default function Post() {
                 <div><b>Published on:</b> August 4, 2025</div>
                 <div><b>Category:</b> {meta.category}</div>
             </Styled.Info>
+
+            <img src={meta.cover} alt={meta.title} style={{ height: "600px", width: "100%", marginBottom: "15px" }} />
 
             <p>
                 Buying a laptop shouldn't require a degree in acronyms. Skip the spec wars-start with <em>what you do</em>, then

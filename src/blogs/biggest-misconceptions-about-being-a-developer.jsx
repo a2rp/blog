@@ -1,4 +1,5 @@
 import { Styled } from "./styled";
+import biggest_misconceptions_about_being_a_developer from "../assets/covers/biggest-misconceptions-about-being-a-developer.png";
 
 export const meta = {
     title: "The Biggest Misconceptions About Being a Developer (It's Not Like the Movies)",
@@ -9,7 +10,7 @@ export const meta = {
     tags: ["Careers", "DevOps", "UX"],
     excerpt:
         "Hoodies, neon terminals, and overnight 'genius' builds make great cinema—but bad career expectations. Here's what real software work looks like, and how to thrive in it.",
-    cover: null,
+    cover: biggest_misconceptions_about_being_a_developer,
 };
 
 export default function Post() {
@@ -21,6 +22,8 @@ export default function Post() {
                 <div><b>Published on:</b> June 9, 2025</div>
                 <div><b>Category:</b> {meta.category}</div>
             </Styled.Info>
+
+            <img src={meta.cover} alt={meta.title} style={{ height: "600px", width: "100%", marginBottom: "15px" }} />
 
             <p>
                 Ask 10 people what developers do, and half will picture a hoodie-wearing hacker pounding keys while green

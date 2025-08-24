@@ -1,4 +1,5 @@
 import { Styled } from "./styled";
+import the_uber_effect_how_an_app_disrupts_industries from "../assets/covers/the-uber-effect-how-an-app-disrupts-industries.png";
 
 export const meta = {
     title: `The "Uber Effect": How an App Can Disrupt an Entire Industry`,
@@ -9,7 +10,7 @@ export const meta = {
     tags: ["Platforms", "AI", "DevOps"],
     excerpt:
         "What looks like 'just an app' is often a new market structure. Here's how two-sided marketplaces, trust systems, and dynamic pricing can upend entire industries—and the trade-offs that follow.",
-    cover: null,
+    cover: the_uber_effect_how_an_app_disrupts_industries,
 };
 
 export default function Post() {
@@ -21,6 +22,8 @@ export default function Post() {
                 <div><b>Published on:</b> July 28, 2025</div>
                 <div><b>Category:</b> {meta.category}</div>
             </Styled.Info>
+
+            <img src={meta.cover} alt={meta.title} style={{ height: "600px", width: "100%", marginBottom: "15px" }} />
 
             <p>
                 We often say “an app disrupted taxis,” but apps don't disrupt industries—<em>systems</em> do.

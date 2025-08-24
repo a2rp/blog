@@ -1,4 +1,5 @@
 import { Styled } from "./styled";
+import internets_memory_what_happens_when_website_deleted from "../assets/covers/internets-memory-what-happens-when-website-deleted.png";
 
 export const meta = {
     title: "The Internet's Memory: What Happens to a Website When It's Deleted?",
@@ -9,7 +10,7 @@ export const meta = {
     tags: ["Web Basics", "Backups", "Cloud"],
     excerpt:
         "Hit delete and it's gone, right? Not on the internet. Here's where ‘deleted' websites linger—CDNs, caches, backups, and archives—and what both users and builders can do about it.",
-    cover: null,
+    cover: internets_memory_what_happens_when_website_deleted,
 };
 
 export default function Post() {
@@ -21,6 +22,7 @@ export default function Post() {
                 <div><b>Published on:</b> April 28, 2025</div>
                 <div><b>Category:</b> {meta.category}</div>
             </Styled.Info>
+            <img src={meta.cover} alt={meta.title} style={{ height: "600px", width: "100%", marginBottom: "15px" }} />
 
             <p>
                 Most people imagine a big red button: press "delete," the website vanishes. In reality, the web is a

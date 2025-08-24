@@ -1,4 +1,5 @@
 import { Styled } from "./styled";
+import from_idea_to_app_long_journey_of_a_simple_feature from "../assets/covers/from-idea-to-app-long-journey-of-a-simple-feature.png";
 
 export const meta = {
     title: "From Idea to App: The Long Journey of a Simple Feature",
@@ -9,7 +10,7 @@ export const meta = {
     tags: ["UX", "DevOps", "Accessibility"],
     excerpt:
         "“It's just a button.” Famous last words. Walk with me through how a small feature actually ships—from fuzzy idea to pixels in production—without breaking everything else.",
-    cover: null,
+    cover: from_idea_to_app_long_journey_of_a_simple_feature,
 };
 
 export default function Post() {
@@ -21,6 +22,8 @@ export default function Post() {
                 <div><b>Published on:</b> June 16, 2025</div>
                 <div><b>Category:</b> {meta.category}</div>
             </Styled.Info>
+
+            <img src={meta.cover} alt={meta.title} style={{ height: "600px", width: "100%", marginBottom: "15px" }} />
 
             <p>
                 If you've ever asked a developer “Can we just add a button?”, you probably saw a nervous smile.

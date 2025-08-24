@@ -1,4 +1,5 @@
 import { Styled } from "./styled";
+import designer_vs_developer_who_builds_website from "../assets/covers/designer-vs-developer-who-builds-website.png";
 
 export const meta = {
     title: "Designer vs. Developer: Who Actually Builds a Website?",
@@ -8,7 +9,7 @@ export const meta = {
     category: "Behind The Digital Curtain",
     tags: ["UX", "Careers", "Web Basics"],
     excerpt: "It's the classic tech duo. One is obsessed with pixels and user flow. The other is obsessed with code and performance. Here's how these two very different roles combine to create the sites you use every day.",
-    cover: null,
+    cover: designer_vs_developer_who_builds_website,
 };
 
 export default function Post() {
@@ -20,6 +21,8 @@ export default function Post() {
                 <div><b>Published on:</b> March 3, 2025</div>
                 <div><b>Category:</b> Behind The Digital Curtain</div>
             </Styled.Info>
+
+            <img src={meta.cover} alt={meta.title} style={{ height: "600px", width: "100%", marginBottom: "15px" }} />
 
             <p>
                 Early in my career, I was tasked with building a simple button. The designer sent me a beautiful mockup. The button had a subtle gradient, a perfect shadow that made it seem like it was floating, and a smooth animation that made it depress slightly when clicked.

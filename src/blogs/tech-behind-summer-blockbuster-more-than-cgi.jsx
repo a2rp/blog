@@ -1,4 +1,5 @@
 import { Styled } from "./styled";
+import tech_behind_summer_blockbuster_more_than_cgi from "../assets/covers/tech-behind-summer-blockbuster-more-than-cgi.png";
 
 export const meta = {
     title: "The Tech Behind Your Summer Blockbuster: More Than Just CGI",
@@ -9,7 +10,7 @@ export const meta = {
     tags: ["Media Tech", "Hardware", "Performance"],
     excerpt:
         "Explosions, aliens, and impossible chases aren't just 'CGI'. Modern movies blend virtual production, motion capture, physics sims, color science, and sound tech to make the magic feel real.",
-    cover: null,
+    cover: tech_behind_summer_blockbuster_more_than_cgi,
 };
 
 export default function Post() {
@@ -21,6 +22,8 @@ export default function Post() {
                 <div><b>Published on:</b> July 14, 2025</div>
                 <div><b>Category:</b> {meta.category}</div>
             </Styled.Info>
+
+            <img src={meta.cover} alt={meta.title} style={{ height: "600px", width: "100%", marginBottom: "15px" }} />
 
             <p>
                 Blockbusters are teamwork at a ridiculous scale. What audiences call “CGI” is actually a pipeline of

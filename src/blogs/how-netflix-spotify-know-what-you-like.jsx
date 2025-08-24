@@ -1,4 +1,5 @@
 import { Styled } from "./styled";
+import how_netflix_spotify_know_what_you_like from "../assets/covers/how-netflix-spotify-know-what-you-like.png";
 
 export const meta = {
     title: "The Invisible UI: How Apps Like Netflix and Spotify REALLY Know What You'll Like",
@@ -8,7 +9,7 @@ export const meta = {
     category: "Behind The Digital Curtain",
     tags: ["AI", "Platforms", "UX"],
     excerpt: "It feels like magic when Netflix suggests the perfect show or Spotify creates a playlist that reads your mind. But it's not magic—it's a fascinating blend of math, data, and clever design meant to keep you watching and listening.",
-    cover: null,
+    cover: how_netflix_spotify_know_what_you_like,
 };
 
 export default function Post() {
@@ -20,6 +21,8 @@ export default function Post() {
                 <div><b>Published on:</b> February 25, 2025</div>
                 <div><b>Category:</b> Behind The Digital Curtain</div>
             </Styled.Info>
+
+            <img src={meta.cover} alt={meta.title} style={{ height: "600px", width: "100%", marginBottom: "15px" }} />
 
             <p>
                 I have a core memory from the early days of Netflix's recommendation system. It was… bad. I'd watch a single cartoon with my niece, and for weeks my entire homepage would be nothing but animated children's shows. I'd rate a comedy highly, and it would recommend every other comedy ever made, with no regard for whether they were actually good.

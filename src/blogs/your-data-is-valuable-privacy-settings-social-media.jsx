@@ -1,4 +1,5 @@
 import { Styled } from "./styled";
+import your_data_is_valuable_privacy_settings_social_media from "../assets/covers/your-data-is-valuable-privacy-settings-social-media.png";
 
 export const meta = {
     title: "Your Data is Valuable: A Simple Guide to Privacy Settings on Social Media",
@@ -9,7 +10,7 @@ export const meta = {
     tags: ["Privacy", "Security", "Platforms"],
     excerpt:
         "A friendly, platform-agnostic checklist to make your social accounts safer and quieter—without disappearing from the internet.",
-    cover: null,
+    cover: your_data_is_valuable_privacy_settings_social_media,
 };
 
 export default function Post() {
@@ -21,6 +22,8 @@ export default function Post() {
                 <div><b>Published on:</b> May 12, 2025</div>
                 <div><b>Category:</b> {meta.category}</div>
             </Styled.Info>
+
+            <img src={meta.cover} alt={meta.title} style={{ height: "600px", width: "100%", marginBottom: "15px" }} />
 
             <p>
                 Most people treat privacy settings like a fire extinguisher—nice to have, rarely tested. But the web runs

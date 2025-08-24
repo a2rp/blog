@@ -1,4 +1,5 @@
 import { Styled } from "./styled";
+import spotting_online_scams_phishing_guide from "../assets/covers/spotting-online-scams-phishing-guide.png";
 
 export const meta = {
     title: "A Developer's Guide to Spotting Online Scams and Phishing Emails",
@@ -8,7 +9,7 @@ export const meta = {
     category: "Digital Life & Security",
     tags: ["Security", "Privacy", "Web Basics"],
     excerpt: "That urgent email from 'your bank' looks real. The website it links to looks perfect. But it's all a trap. Learn the telltale signs developers look for to spot a phishing attempt from a mile away.",
-    cover: null,
+    cover: spotting_online_scams_phishing_guide,
 };
 
 export default function Post() {
@@ -20,6 +21,8 @@ export default function Post() {
                 <div><b>Published on:</b> February 18, 2025</div>
                 <div><b>Category:</b> Digital Life & Security</div>
             </Styled.Info>
+
+            <img src={meta.cover} alt={meta.title} style={{ height: "600px", width: "100%", marginBottom: "15px" }} />
 
             <p>
                 A few years ago, my non-tech-savvy uncle nearly fell for one. The email was impeccable—it had the bank's logo, the right fonts, and a message that made his heart drop: "Suspicious activity detected on your account. Click here to secure it immediately."

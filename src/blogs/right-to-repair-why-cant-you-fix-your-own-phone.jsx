@@ -1,4 +1,5 @@
 import { Styled } from "./styled";
+import right_to_repair_why_cant_you_fix_your_own_phone from "../assets/covers/right-to-repair-why-cant-you-fix-your-own-phone.png";
 
 export const meta = {
     title: `The "Right to Repair": Why Can't You Fix Your Own Phone?`,
@@ -9,7 +10,7 @@ export const meta = {
     tags: ["Hardware", "Platforms", "Security"],
     excerpt:
         "Screens crack, batteries fade, ports loosen—welcome to reality. Here's why fixing modern gadgets is hard, what's changing, and how to choose (or design) tech that respects repair.",
-    cover: null,
+    cover: right_to_repair_why_cant_you_fix_your_own_phone,
 };
 
 export default function Post() {
@@ -21,6 +22,8 @@ export default function Post() {
                 <div><b>Published on:</b> August 25, 2025</div>
                 <div><b>Category:</b> {meta.category}</div>
             </Styled.Info>
+
+            <img src={meta.cover} alt={meta.title} style={{ height: "600px", width: "100%", marginBottom: "15px" }} />
 
             <p>
                 Once upon a time, if your phone battery got tired, you popped off the back and swapped it. Today, you're

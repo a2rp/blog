@@ -1,4 +1,5 @@
 import { Styled } from "./styled";
+import the_cloud_is_someone_elses_computer from "../assets/covers/the-cloud-is-someone-elses-computer.png";
 
 export const meta = {
     title: "\"The Cloud\" Isn't Magic: It's Just Someone Else's Computer",
@@ -8,7 +9,7 @@ export const meta = {
     category: "How The Internet Works",
     tags: ["Cloud", "DevOps", "Security"],
     excerpt: "We entrust our photos, emails, and files to 'the cloud' every day. But what is it, really? Let's pull back the curtain on the world's most powerful rental computer system.",
-    cover: null,
+    cover: the_cloud_is_someone_elses_computer,
 };
 
 export default function Post() {
@@ -20,6 +21,8 @@ export default function Post() {
                 <div><b>Published on:</b> January 14, 2025</div>
                 <div><b>Category:</b> How The Internet Works</div>
             </Styled.Info>
+
+            <img src={meta.cover} alt={meta.title} style={{ height: "600px", width: "100%", marginBottom: "15px" }} />
 
             <p>
                 I was at a family dinner last week when my aunt proudly showed me a picture of her new puppy on her phone. "I've already saved him to the cloud!" she announced. I nodded, but then I asked her, "What do you think the cloud is?"

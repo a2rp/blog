@@ -1,4 +1,5 @@
 import { Styled } from "./styled";
+import why_apps_feel_slow_speed_vs_features from "../assets/covers/why-apps-feel-slow-speed-vs-features.png";
 
 export const meta = {
     title: "Why Does This App Feel So Slow? The Developer's Dilemma of Speed vs. Features",
@@ -8,7 +9,7 @@ export const meta = {
     category: "Behind The Digital Curtain",
     tags: ["Performance", "UX", "DevOps"],
     excerpt: "You've felt it. The frustrating lag, the unresponsive button, the endless loading spinner. Speed isn't an accident—it's a constant, difficult battle fought by developers against an ever-growing pile of features.",
-    cover: null,
+    cover: why_apps_feel_slow_speed_vs_features,
 };
 
 export default function Post() {
@@ -20,6 +21,8 @@ export default function Post() {
                 <div><b>Published on:</b> March 17, 2025</div>
                 <div><b>Category:</b> Behind The Digital Curtain</div>
             </Styled.Info>
+
+            <img src={meta.cover} alt={meta.title} style={{ height: "600px", width: "100%", marginBottom: "15px" }} />
 
             <p>
                 There's a particular sigh of disappointment that comes from a slow app. It's not the sigh of anger at a crash; it's a sigh of resignation. A feeling of your precious time and attention being slowly drained away. You tap a button. Nothing happens. You tap it again, wondering if you missed it. A second later, the app finally jolts into action, now processing two taps instead of one.

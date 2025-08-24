@@ -1,4 +1,5 @@
 import { Styled } from "./styled";
+import your_password_is_terrible from "../assets/covers/your-password-is-terrible.png";
 
 export const meta = {
     title: "Your Password is Terrible, and Here's Why.",
@@ -8,7 +9,7 @@ export const meta = {
     category: "Digital Life & Security",
     tags: ["Security", "Privacy", "Web Basics"],
     excerpt: "Let's be honest, you've used 'password123' more than once. It's not your fault—remembering dozens of passwords is impossible. Here's why weak passwords are a problem and what you can actually do about it.",
-    cover: null,
+    cover: your_password_is_terrible,
 };
 
 export default function Post() {
@@ -20,6 +21,8 @@ export default function Post() {
                 <div><b>Published on:</b> February 4, 2025</div>
                 <div><b>Category:</b> Digital Life & Security</div>
             </Styled.Info>
+
+            <img src={meta.cover} alt={meta.title} style={{ height: "600px", width: "100%", marginBottom: "15px" }} />
 
             <p>
                 Go on, admit it. You have a "system." Maybe it's your pet's name followed by your birth year. Maybe it's the same semi-respectable word you've been using since college, but with an exclamation point added when a website demands a "special character."

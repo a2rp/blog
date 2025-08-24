@@ -1,4 +1,5 @@
 import { Styled } from "./styled";
+import what_happens_when_you_type_a_web_address from "../assets/covers/what-happens-when-you-type-a-web-address.png";
 
 export const meta = {
     title: "What Really Happens When You Type a Web Address and Press Enter?",
@@ -9,7 +10,7 @@ export const meta = {
     tags: ["Web Basics", "Networking", "Security"],
     excerpt:
         "A restaurant-style tour of DNS lookups, TLS handshakes, HTTP requests, servers, and the browser render pipeline—what really happens after you hit Enter.",
-    cover: null, // no images
+    cover: what_happens_when_you_type_a_web_address
 };
 
 export default function Post() {
@@ -28,6 +29,8 @@ export default function Post() {
                         <strong>Category:</strong> How The Internet Works
                     </div>
                 </Styled.Info>
+
+                <img src={meta.cover} alt={meta.title} style={{ height: "600px", width: "100%", marginBottom: "15px" }} />
 
                 <p>
                     You've done it thousands of times. You open your laptop, type

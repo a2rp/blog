@@ -35,6 +35,47 @@ export const Styled = {
             }
         }
 
+        .absolutePrev,
+        .absoluteNext {
+            /* border: 1px solid #333; */
+            position: fixed;
+            top: 60px;
+            width: 50px;
+            height: calc(100vh - 60px);
+            overflow: hidden;
+            /* cursor: pointer; */
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            &:hover {
+                opacity: 1;
+            }
+
+            a {
+                border: none;
+                border: 1px solid #111;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                width: 100%;
+                display: inline-flex;
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+
+        .absolutePrev {
+            writing-mode: vertical-lr;
+            /* text-orientation: sideways-left; */
+            left: 0;
+        }
+
+        .absoluteNext {
+            writing-mode: vertical-rl;
+            /* text-orientation: sideways-left; */
+            right: 0;
+        }
+
         .prevNextWrapper {
             border: 1px solid #333;
             display: flex;

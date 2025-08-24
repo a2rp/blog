@@ -1,4 +1,5 @@
 import { Styled } from "./styled";
+import are_software_subscriptions_a_good_deal from "../assets/covers/are-software-subscriptions-a-good-deal.png";
 
 export const meta = {
     title: "Are Software Subscriptions (Like Netflix and Adobe) a Good Deal?",
@@ -9,7 +10,7 @@ export const meta = {
     tags: ["Subscriptions", "Cloud", "Platforms"],
     excerpt:
         "Subscriptions can be amazing—or a slow leak in your wallet. Here's a plain-English way to decide what to keep, cancel, or replace with a one-time tool.",
-    cover: null,
+    cover: are_software_subscriptions_a_good_deal,
 };
 
 export default function Post() {
@@ -21,6 +22,8 @@ export default function Post() {
                 <div><b>Published on:</b> August 18, 2025</div>
                 <div><b>Category:</b> {meta.category}</div>
             </Styled.Info>
+
+            <img src={meta.cover} alt={meta.title} style={{ height: "600px", width: "100%", marginBottom: "15px" }} />
 
             <p>
                 From Netflix to Adobe to your favorite note app, everything wants a monthly fee. Subscriptions fund

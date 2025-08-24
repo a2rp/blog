@@ -1,4 +1,5 @@
 import { Styled } from "./styled";
+import ai_101_how_you_already_use_it_every_day from "../assets/covers/ai-101-how-you-already-use-it-every-day.png";
 
 export const meta = {
     title: "AI 101: It's Not Just Sci-Fi. How You Already Use It Every Day.",
@@ -9,7 +10,7 @@ export const meta = {
     tags: ["AI", "Privacy", "Cloud"],
     excerpt:
         "Spam filters, Maps' ETA, Face Unlock, even your camera's Night Mode—yep, that's AI. A friendly tour of the invisible models already working for you, plus tips to use them wisely.",
-    cover: null,
+    cover: ai_101_how_you_already_use_it_every_day,
 };
 
 export default function Post() {
@@ -22,8 +23,10 @@ export default function Post() {
                 <div><b>Category:</b> {meta.category}</div>
             </Styled.Info>
 
+            <img src={meta.cover} alt={meta.title} style={{ height: "600px", width: "100%", marginBottom: "15px" }} />
+
             <p>
-                When people hear “AI,” they picture talking robots. In reality, most AI you meet is quiet, fast, and
+                When people hear "AI," they picture talking robots. In reality, most AI you meet is quiet, fast, and
                 deeply practical: it filters spam, fixes photos, translates menus, routes taxis, and guesses what you'll
                 type next. Let's demystify what's happening—and how to get more value with less risk.
             </p>
@@ -31,7 +34,7 @@ export default function Post() {
             <Styled.Analogy>
                 <p>
                     <strong>Analogy:</strong> Think of AI like an <em>apprentice</em> that noticed patterns from thousands
-                    of past tasks. It's quick and tireless, but it doesn't “understand” like a person. Give it clear jobs
+                    of past tasks. It's quick and tireless, but it doesn't "understand" like a person. Give it clear jobs
                     and good tools and it shines; ask for wisdom and it fumbles.
                 </p>
             </Styled.Analogy>
@@ -41,7 +44,7 @@ export default function Post() {
                 <li><strong>Spam &amp; fraud filters:</strong> Classifiers spot suspicious emails, logins, or transactions.</li>
                 <li><strong>Camera magic:</strong> Night Mode, portrait blur, HDR—models denoise, detect faces, and blend exposures.</li>
                 <li><strong>Maps &amp; rides:</strong> Predictive ETA, traffic routing, surge predictions.</li>
-                <li><strong>Recommendations:</strong> What to watch/listen/read next; “customers also bought.”</li>
+                <li><strong>Recommendations:</strong> What to watch/listen/read next; "customers also bought."</li>
                 <li><strong>Search &amp; autocomplete:</strong> Typo correction, query suggestions, smart reply.</li>
                 <li><strong>Translation &amp; OCR:</strong> Live captions, menu translation, document scanning.</li>
                 <li><strong>Biometrics:</strong> Face/Touch unlock uses learned patterns, not a saved photo.</li>
@@ -67,17 +70,17 @@ export default function Post() {
             <ul>
                 <li><strong>Great at patterns and speed.</strong> Classifying, ranking, predicting the next likely thing.</li>
                 <li><strong>Weak at true understanding.</strong> Can be confidently wrong, especially on unusual inputs.</li>
-                <li><strong>Brittle at the edges.</strong> A small change in context can flip the result; always keep a “back” button.</li>
+                <li><strong>Brittle at the edges.</strong> A small change in context can flip the result; always keep a "back" button.</li>
                 <li><strong>Biased by data.</strong> If training data skews, outputs can too—measure and correct it.</li>
             </ul>
 
             <h2>Get More Value (Practical Tips)</h2>
             <ul>
                 <li><strong>Turn on on-device features:</strong> Dictation, live captions, offline translate packs—faster and more private.</li>
-                <li><strong>Use smart filtering:</strong> Let email/notifications auto-sort; check a “priority” view first.</li>
+                <li><strong>Use smart filtering:</strong> Let email/notifications auto-sort; check a "priority" view first.</li>
                 <li><strong>Photo sanity:</strong> Search by people/places/things; favorite the keepers right after events.</li>
                 <li><strong>Voice → text:</strong> For notes and replies on the go; fix punctuation with quick edits.</li>
-                <li><strong>Personalize gently:</strong> Give apps minimal preferences (genres, “less like this”) to tune recommendations without oversharing.</li>
+                <li><strong>Personalize gently:</strong> Give apps minimal preferences (genres, "less like this") to tune recommendations without oversharing.</li>
             </ul>
 
             <h2>Privacy &amp; Control (Simple Defaults)</h2>
@@ -91,16 +94,16 @@ export default function Post() {
             <Styled.Analogy>
                 <p>
                     <strong>Builder's Note:</strong> If you add AI to products, favor <em>assistive</em> patterns
-                    (suggest, don't surprise), show <em>why</em> a result appeared (“because you watched X”),
-                    and design graceful failure states (“couldn't recognize—try again in brighter light”).
+                    (suggest, don't surprise), show <em>why</em> a result appeared ("because you watched X"),
+                    and design graceful failure states ("couldn't recognize—try again in brighter light").
                 </p>
             </Styled.Analogy>
 
             <h2>Common Myths (Debunked)</h2>
             <ul>
-                <li><strong>“AI understands like a human.”</strong> It recognizes patterns; it doesn't have intent or common sense.</li>
-                <li><strong>“It's always listening.”</strong> Many devices buffer audio locally and wake on a keyword; check and change the setting.</li>
-                <li><strong>“AI is all or nothing.”</strong> You can use on-device features and opt out of cloud training where it matters.</li>
+                <li><strong>"AI understands like a human."</strong> It recognizes patterns; it doesn't have intent or common sense.</li>
+                <li><strong>"It's always listening."</strong> Many devices buffer audio locally and wake on a keyword; check and change the setting.</li>
+                <li><strong>"AI is all or nothing."</strong> You can use on-device features and opt out of cloud training where it matters.</li>
             </ul>
 
             <h2>Starter Glossary (Bookmark This)</h2>

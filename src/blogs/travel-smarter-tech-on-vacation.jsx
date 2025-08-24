@@ -1,4 +1,5 @@
 import { Styled } from "./styled";
+import travel_smarter_tech_on_vacation from "../assets/covers/travel-smarter-tech-on-vacation.png";
 
 export const meta = {
     title: "Travel Smarter: How to Use Technology on Your Summer Vacation",
@@ -9,7 +10,7 @@ export const meta = {
     tags: ["Networking", "Privacy", "Backups"],
     excerpt:
         "Let tech be your sidekick, not your boss. A practical guide to staying connected, safe, and sane-maps, money, photos, power, and privacy-without turning your holiday into a second job.",
-    cover: null,
+    cover: travel_smarter_tech_on_vacation,
 };
 
 export default function Post() {
@@ -21,6 +22,8 @@ export default function Post() {
                 <div><b>Published on:</b> July 7, 2025</div>
                 <div><b>Category:</b> {meta.category}</div>
             </Styled.Info>
+
+            <img src={meta.cover} alt={meta.title} style={{ height: "600px", width: "100%", marginBottom: "15px" }} />
 
             <p>
                 The best vacation tech quietly disappears in the background. No 27-app rituals. No ten chargers dangling

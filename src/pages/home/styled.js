@@ -14,7 +14,7 @@ export const Styled = {
     Main: styled.div`
         width: 100%;
         max-width: 1200px;
-        padding: 0 18px;
+        /* padding: 0 18px; */
     `,
     Info: styled.div`
         margin-bottom: 30px;
@@ -110,6 +110,7 @@ export const Styled = {
         max-width: 300px;
         height: 450px;
         position: relative;
+        overflow: hidden;
         transition: transform 0.2s ease, box-shadow 0.2s ease;
         &:hover {
             transform: translateY(-3px);

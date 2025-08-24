@@ -1,4 +1,5 @@
 import { Styled } from "./styled";
+import behind_scenes_software_update from "../assets/covers/behind-scenes-software-update.png";
 
 export const meta = {
     title: "\"It's Not a Bug, It's a Feature!\" - Behind the Scenes of a Software Update",
@@ -8,7 +9,7 @@ export const meta = {
     category: "Behind The Digital Curtain",
     tags: ["DevOps", "UX", "Performance"],
     excerpt: "That annoying 'update required' notification pops up all the time. What's actually in there? From squashing bugs to building new features, here's the messy, collaborative process of how software grows and improves.",
-    cover: null,
+    cover: behind_scenes_software_update,
 };
 
 export default function Post() {
@@ -20,6 +21,8 @@ export default function Post() {
                 <div><b>Published on:</b> March 10, 2025</div>
                 <div><b>Category:</b> Behind The Digital Curtain</div>
             </Styled.Info>
+
+            <img src={meta.cover} alt={meta.title} style={{ height: "600px", width: "100%", marginBottom: "15px" }} />
 
             <p>
                 I still remember the first bug I ever shipped to production. It was a tiny thing—a button that would sometimes, but not always, appear slightly off-center on a certain model of phone. I'd tested it. My colleague had tested it. It worked fine on our machines. We shipped the update on a Friday afternoon and high-fived, proud of our week's work.

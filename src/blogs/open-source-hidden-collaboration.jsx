@@ -1,4 +1,5 @@
 import { Styled } from "./styled";
+import open_source_hidden_collaboration from "../assets/covers/open-source-hidden-collaboration.png";
 
 export const meta = {
     title: "Open Source: The Hidden Collaboration Behind Most Software",
@@ -9,7 +10,7 @@ export const meta = {
     tags: ["Open Source", "Careers", "DevOps"],
     excerpt:
         "From your browser to your backend, open source quietly powers the stack. Here’s how it actually works, why companies rely on it, and how you can start contributing—even without writing a single line of code.",
-    cover: null,
+    cover: open_source_hidden_collaboration,
 };
 
 export default function Post() {
@@ -21,6 +22,8 @@ export default function Post() {
                 <div><b>Published on:</b> June 23, 2025</div>
                 <div><b>Category:</b> {meta.category}</div>
             </Styled.Info>
+
+            <img src={meta.cover} alt={meta.title} style={{ height: "600px", width: "100%", marginBottom: "15px" }} />
 
             <p>
                 If the internet were a city, open source would be the roads, bridges, and power lines. It’s the quietly

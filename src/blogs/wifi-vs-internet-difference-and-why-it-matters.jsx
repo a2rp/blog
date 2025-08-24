@@ -1,4 +1,5 @@
 import { Styled } from "./styled";
+import wifi_vs_internet_difference_and_why_it_matters from "../assets/covers/wifi-vs-internet-difference-and-why-it-matters.png";
 
 export const meta = {
     title: `Wi-Fi vs. Internet: What's the Difference and Why It Matters`,
@@ -9,7 +10,7 @@ export const meta = {
     tags: ["Networking", "Security", "Performance"],
     excerpt:
         "Full bars but nothing loads? That's because Wi-Fi and the Internet are not the same thing. Here's a plain-English guide to your home network, how to diagnose problems, and quick fixes that actually work.",
-    cover: null,
+    cover: wifi_vs_internet_difference_and_why_it_matters,
 };
 
 export default function Post() {
@@ -21,6 +22,8 @@ export default function Post() {
                 <div><b>Published on:</b> August 11, 2025</div>
                 <div><b>Category:</b> {meta.category}</div>
             </Styled.Info>
+
+            <img src={meta.cover} alt={meta.title} style={{ height: "600px", width: "100%", marginBottom: "15px" }} />
 
             <p>
                 You're staring at <em>full Wi-Fi bars</em>… but Instagram won't refresh. Did the internet break?

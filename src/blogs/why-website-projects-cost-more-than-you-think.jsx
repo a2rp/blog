@@ -1,4 +1,5 @@
 import { Styled } from "./styled";
+import why_website_projects_cost_more_than_you_think from "../assets/covers/why-website-projects-cost-more-than-you-think.png";
 
 export const meta = {
     title: "The Hidden Work: Why Your Website Project Costs More Than You Think",
@@ -8,7 +9,7 @@ export const meta = {
     category: "Behind The Digital Curtain",
     tags: ["Web Basics", "UX", "DevOps"],
     excerpt: "That quote for a new website seems high for 'just putting some text and pictures online.' But beneath the visible surface lies an iceberg of planning, testing, and decisions that clients never see.",
-    cover: null,
+    cover: why_website_projects_cost_more_than_you_think,
 };
 
 export default function Post() {
@@ -20,6 +21,8 @@ export default function Post() {
                 <div><b>Published on:</b> March 31, 2025</div>
                 <div><b>Category:</b> Behind The Digital Curtain</div>
             </Styled.Info>
+
+            <img src={meta.cover} alt={meta.title} style={{ height: "600px", width: "100%", marginBottom: "15px" }} />
 
             <p>
                 Early in my freelance career, I landed a client who wanted a "simple" five-page website. They had the text and images ready. "How long could it possibly take?" they asked. I gave them a quote based on the naive math of hours-per-page. They agreed, and I got to work, confident I'd underpromised and would overdeliver.

@@ -1,4 +1,5 @@
 import { Styled } from "./styled";
+import is_your_smart_device_listening from "../assets/covers/is-your-smart-device-listening.png";
 
 export const meta = {
     title: "Is Your Smart Device Listening to You? The Truth About Microphones and Ads.",
@@ -8,7 +9,7 @@ export const meta = {
     category: "Digital Life & Security",
     tags: ["Privacy", "Platforms", "AI"],
     excerpt: "You talk about kayaking with a friend, and suddenly your phone shows you kayak ads. It feels like it's listening. The truth is both more complicated, and in a way, more concerning.",
-    cover: null,
+    cover: is_your_smart_device_listening,
 };
 
 export default function Post() {
@@ -20,6 +21,8 @@ export default function Post() {
                 <div><b>Published on:</b> February 11, 2025</div>
                 <div><b>Category:</b> Digital Life & Security</div>
             </Styled.Info>
+
+            <img src={meta.cover} alt={meta.title} style={{ height: "600px", width: "100%", marginBottom: "15px" }} />
 
             <p>
                 It's one of the most common modern-day ghost stories. You're having a conversation about, say, needing new running shoes. You haven't searched for them online. You haven't typed a word. Later that day, you open Instagram and there it is: a sleek ad for the exact brand of running shoes you talked about.
