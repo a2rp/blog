@@ -7,8 +7,9 @@ export const Styled = {
         align-items: center;
     `,
     Main: styled.div`
+        /* border: 1px solid #f00; */
         width: 100%;
-        max-width: 1200px;
+        max-width: 1440px;
 
         a {
             color: lightcoral;
@@ -21,13 +22,12 @@ export const Styled = {
         }
 
         .goBackLink {
-            background-color: #111;
+            /* background-color: #111; */
             border: 1px solid #333;
             color: #fff;
             text-decoration: none;
             padding: 5px 20px;
             border-radius: 6px;
-            margin-bottom: 30px;
             display: inline-flex;
             gap: 15px;
             &:hover {
@@ -74,6 +74,34 @@ export const Styled = {
             writing-mode: vertical-rl;
             /* text-orientation: sideways-left; */
             right: 0;
+        }
+
+        .mainBlogWrapper {
+            /* border: 1px solid #ff0; */
+            min-height: 100vh;
+            position: relative;
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+            margin-bottom: 30px;
+
+            .blog {
+                /* border: 1px solid #ff0; */
+                width: 100%;
+            }
+            .controls {
+                /* border: 1px solid #ff0; */
+                flex: 1 1 400px;
+                background: #1a1a1a;
+                border-radius: 12px;
+                min-height: 300px;
+                padding: 15px;
+                position: sticky;
+                top: 100px;
+                @media (width<1000px) {
+                    display: none;
+                }
+            }
         }
 
         .prevNextWrapper {

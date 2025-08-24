@@ -3,6 +3,7 @@ import { Link, NavLink, useNavigate, useParams } from "react-router-dom";
 import { Styled } from "./styled";
 import { formatDate } from "../../utils/format"; // optional: pretty dates
 import { Box, CircularProgress } from "@mui/material";
+import AllPostsList from "../../components/AllPostsList";
 
 // Lazy loaders for components
 const loaders = import.meta.glob("../../blogs/*.jsx");
@@ -53,7 +54,7 @@ export default function Blog() {
 
     const PostComp = React.lazy(loaders[key]);
 
-    const canGoBack = window.history.state?.idx > 0; // RR v6 tracks index
+    const canGoBack = window.history.state?.idx > 0;
 
     useEffect(() => {
         window.scrollTo({ top: 0, behavior: "auto" });
@@ -62,7 +63,7 @@ export default function Blog() {
     return (
         <Styled.Wrapper>
             <Styled.Main>
-                <NavLink
+                {/* <NavLink
                     to="/"
                     className="goBackLink"
                     onClick={(e) => {
@@ -74,7 +75,7 @@ export default function Blog() {
                     }}
                 >
                     ← Back
-                </NavLink>
+                </NavLink> */}
 
                 <div className="absolutePrev">
                     {prev ? (
@@ -91,10 +92,34 @@ export default function Blog() {
                     ) : ""}
                 </div>
 
-                <div style={{ border: "0px solid #f00", minHeight: "100vh", position: "relative" }}>
-                    <Suspense fallback={<Box sx={{ position: "absolute", width: "100vw", height: "100vh", displa: "flex", alignItems: "center", justifyContent: "center" }}><CircularProgress /></Box>}>
-                        <PostComp />
-                    </Suspense>
+                <div className="mainBlogWrapper">
+                    <div className="blog">
+
+                        <Suspense fallback={<Box sx={{ position: "absolute", width: "100vw", height: "100vh", displa: "flex", alignItems: "center", justifyContent: "center" }}><CircularProgress /></Box>}>
+                            <PostComp />
+                        </Suspense>
+                    </div>
+                    <div className="controls">
+                        <aside>
+                            <div style={{ display: "flex", borderBottom: "1px solid #333", padding: "5px 5px", justifyContent: "space-between", alignItems: "center" }}>
+                                <h3>All Posts</h3>
+                                <NavLink
+                                    to="/"
+                                    className="goBackLink"
+                                    onClick={(e) => {
+                                        if (canGoBack) {
+                                            e.preventDefault();   // stay in SPA, go back
+                                            navigate(-1);
+                                        }
+                                        // else: default link to "/" runs as a fallback
+                                    }}
+                                >
+                                    ← Back
+                                </NavLink>
+                            </div>
+                            <AllPostsList />
+                        </aside>
+                    </div>
                 </div>
 
                 <div className="prevNextWrapper">
@@ -121,7 +146,7 @@ export default function Blog() {
                         ))}
                     </div>
                 </div>
-            </Styled.Main>
-        </Styled.Wrapper>
+            </Styled.Main >
+        </Styled.Wrapper >
     );
 }

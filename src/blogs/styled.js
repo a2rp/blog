@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const Styled = {
     Wrapper: styled.article`
         color: #e0e0e0;
-        max-width: 900px;
-        margin: 40px auto;
+        /* max-width: 1000px; */
+        /* margin: 40px auto; */
         padding: 20px;
         font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
             Roboto, sans-serif;
