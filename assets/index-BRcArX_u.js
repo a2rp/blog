@@ -1,4 +1,4 @@
-import{f as k,_ as C,a as S,b as D,c as F,d as N,e as M,g as A,h as W,i as T,j as L,k as z,l as B,m as E,n as P,o as R,p as q,q as I,r as H,s as O,t as Y,u as J,v as U,w as $,x as K,y as G,z as V,A as X,B as Q,C as Z,D as ee,E as te,F as oe,G as ae,H as se}from"./format-CRIqt3Cu.js";import{d as r,u as re,r as v,j as t,M as ie,N as le}from"./index-DOkHHaZ4.js";const p={Wrapper:r.div`
+import{f as k,_ as C,a as S,b as D,c as F,d as N,e as M,g as A,h as W,i as T,j as L,k as z,l as B,m as E,n as P,o as R,p as q,q as I,r as H,s as O,t as Y,u as J,v as U,w as $,x as K,y as G,z as V,A as X,B as Q,C as Z,D as ee,E as te,F as oe,G as ae,H as se}from"./format-DKwLfYzt.js";import{d as r,u as re,r as v,j as t,M as ie,N as le}from"./index-CfXFlb3f.js";const p={Wrapper:r.div`
         /* border: 1px solid #f00; */
         display: flex;
         justify-content: center;
@@ -9,7 +9,7 @@ import{f as k,_ as C,a as S,b as D,c as F,d as N,e as M,g as A,h as W,i as T,j a
     `,Main:r.div`
         width: 100%;
         max-width: 1200px;
-        padding: 0 18px;
+        /* padding: 0 18px; */
     `,Info:r.div`
         margin-bottom: 30px;
         h1 {
@@ -100,6 +100,7 @@ import{f as k,_ as C,a as S,b as D,c as F,d as N,e as M,g as A,h as W,i as T,j a
         max-width: 300px;
         height: 450px;
         position: relative;
+        overflow: hidden;
         transition: transform 0.2s ease, box-shadow 0.2s ease;
         &:hover {
             transform: translateY(-3px);
