@@ -11,6 +11,14 @@ export default function AllPostsList() {
                 <ul style={{ border: "0px solid #f00", height: "100%", listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 6, fontSize: 12, fontStyle: "italic" }}>
                     <li>
                         <NavLink
+                            to="/choose-the-right-ai-model-2025"
+                            title="Choosing the Right AI Model in 2025 - A Practical Playbook for MERN Devs"
+                        >
+                            Choosing the Right AI Model in 2025 — A Practical Playbook for MERN Devs
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
                             to="/ai-101-how-you-already-use-it-every-day"
                             title="AI 101: It's Not Just Sci-Fi. How You Already Use It Every Day."
                         >
