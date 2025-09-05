@@ -51,7 +51,7 @@ const App = () => {
                     </Styled.FooterMain>
                 </Styled.Footer>
             </Styled.Wrapper>
-            <ScrollToTopButton threshold={100} />
+            <ScrollToTopButton threshold={101} />
         </>
     )
 }
