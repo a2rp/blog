@@ -170,7 +170,7 @@ export default function Post() {
                 acceptance criteria.
             </p>
 
-            <p><strong>CTA:</strong> Want a printable one-pager with teacher, founder, and developer templates? Comment <em>TEMPLATE</em> and I'll share the PDF.</p>
+            {/* <p><strong>CTA:</strong> Want a printable one-pager with teacher, founder, and developer templates? Comment <em>TEMPLATE</em> and I'll share the PDF.</p> */}
         </Styled.Wrapper>
     );
 }
