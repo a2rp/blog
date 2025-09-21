@@ -8,7 +8,27 @@ export default function AllPostsList() {
     return (
         <Styled.Wrapper>
             <nav aria-label="All Posts">
-                <ul style={{ border: "0px solid #f00", height: "100%", listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 6, fontSize: 12, fontStyle: "italic" }}>
+                <ul
+                    style={{
+                        border: "0px solid #f00",
+                        height: "100%",
+                        listStyle: "none",
+                        padding: 0,
+                        margin: 0,
+                        display: "grid",
+                        gap: 6,
+                        fontSize: 12,
+                        fontStyle: "italic"
+                    }}
+                >
+                    <li>
+                        <NavLink
+                            to="/how-to-talk-to-ai-better-answers"
+                            title="How to Talk to AI: A 10-Minute Guide for Better Answers"
+                        >
+                            How to Talk to AI: A 10-Minute Guide for Better Answers
+                        </NavLink>
+                    </li>
                     <li>
                         <NavLink
                             to="/choose-the-right-ai-model-2025"
