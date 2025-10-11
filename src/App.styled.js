@@ -3,39 +3,6 @@ import styled from "styled-components";
 
 export const Styled = {
     Wrapper: styled.div``,
-    Header: styled.header`
-        border-bottom: 1px solid #333;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 60px;
-        background-color: #000;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 9999;
-    `,
-    HeaderMain: styled.div`
-        width: 100%;
-        max-width: 1440px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 50px;
-        @media (width < 900px) {
-            padding: 0 15px;
-        }
-    `,
-    NavLink: styled(NavLink)`
-        color: #666;
-        text-decoration: none;
-        font-size: 18px;
-        font-weight: 500;
-        &.active {
-            color: white;
-        }
-    `,
     Main: styled.main`
         min-height: 100vh;
         padding: 100px 50px;
@@ -43,32 +10,41 @@ export const Styled = {
             padding: 80px 15px;
         }
     `,
-    Footer: styled.footer`
-        border-top: 1px solid #333;
-        background-color: #000;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    `,
-    FooterMain: styled.div`
+    SliderWrapper: styled.div`
+        position: fixed;
+        top: 60px;
+        left: 0;
         width: 100%;
-        max-width: 1440px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 15px 50px;
-        @media (width < 900px) {
-            padding: 15px 15px;
-        }
-    `,
-    FooterCol: styled.div`
-        font-size: 12px;
+        height: calc(100% - 60px);
+        background: var(--color-bg);
+        z-index: 1000;
 
-        a {
-            text-decoration: none;
-            padding: 5px 0;
-            border-bottom: 1px solid #fff;
-            color: #fff;
+        background-color: rgba(var(--color-bg-rgb), 0.95);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+
+        display: flex;
+        align-items: stretch;
+
+        .empty {
+            width: 100%;
+            cursor: pointer;
+        }
+        .navlistWrapper {
+            width: 300px;
+            flex: 0 0 300px;
+            background-color: var(--surface);
+            border-left: 1px solid var(--color-border);
+            box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
+            animation: slideIn 3s linear 1 forwards;
+            @keyframes slideIn {
+                from {
+                    transform: translateX(100%);
+                }
+                to {
+                    transform: translateX(0);
+                }
+            }
         }
     `,
 };

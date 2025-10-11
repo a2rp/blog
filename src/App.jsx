@@ -1,57 +1,41 @@
-import { Box, CircularProgress } from '@mui/material'
-import { lazy, Suspense } from 'react'
-import { NavLink, Route, Routes } from 'react-router-dom'
+import { useEffect, useState } from 'react'
 import { Styled } from './App.styled'
+import Footer from './components/footer'
+import Header from './components/header'
 import ScrollToTop from './components/ScrollToTop'
 import ScrollToTopButton from './components/ScrollToTopButton'
-
-const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
-
-const Home = lazy(() => sleep(800).then(() => import('./pages/home')))
-const Blog = lazy(() => sleep(800).then(() => import('./pages/blog')))
-const About = lazy(() => sleep(800).then(() => import('./pages/about')))
-const NotFound = lazy(() => sleep(800).then(() => import('./pages/notFound')))
+import AppRoutes from './routes/AppRoutes'
+import NavList from './components/navlist'
 
 const App = () => {
+    const [displaySlider, setDisplaySlider] = useState(false);
+    const handleSliderButtonClick = () => {
+        setDisplaySlider(prev => !prev);
+    };
+    // useEffect(() => {
+    //     console.log("display slider", displaySlider);
+    // }, [displaySlider]);
+
     return (
         <>
             <Styled.Wrapper>
-                <Styled.Header>
-                    <Styled.HeaderMain>
-                        <Styled.NavLink to="/">a2rp Blogs</Styled.NavLink>
-                        <Styled.NavLink to="/about">About</Styled.NavLink>
-                    </Styled.HeaderMain>
-                </Styled.Header>
+                <Header handleSliderButtonClick={handleSliderButtonClick} />
                 <Styled.Main>
                     <ScrollToTop />
-                    <Suspense fallback={<Box sx={{
-                        height: "100vh",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center"
-                    }}>
-                        <CircularProgress />
-                    </Box>}>
-                        <Routes>
-                            <Route path="/" element={<Home />} />
-                            <Route path="/:slug" element={<Blog />} />
-                            <Route path="/about" element={<About />} />
-                            <Route path="*" element={<NotFound />} />
-                        </Routes>
-                    </Suspense>
+                    <AppRoutes />
                 </Styled.Main>
-                <Styled.Footer>
-                    <Styled.FooterMain>
-                        <Styled.FooterCol>
-                            &copy; {new Date().getFullYear()} | All Rights Reserved.
-                        </Styled.FooterCol>
-                        <Styled.FooterCol>
-                            crafted with ♥ by <a href="https://www.ashishranjan.net" target="_blank">Ashish Ranjan</a>
-                        </Styled.FooterCol>
-                    </Styled.FooterMain>
-                </Styled.Footer>
+                <Footer />
             </Styled.Wrapper>
             <ScrollToTopButton threshold={101} />
+
+            {displaySlider && <>
+                <Styled.SliderWrapper>
+                    <div className="empty" onClick={handleSliderButtonClick}></div>
+                    <div className="navlistWrapper">
+                        <NavList />
+                    </div>
+                </Styled.SliderWrapper>
+            </>}
         </>
     )
 }

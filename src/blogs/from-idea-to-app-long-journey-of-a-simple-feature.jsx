@@ -9,7 +9,7 @@ export const meta = {
     category: "A Look at Tech Culture & Careers",
     tags: ["UX", "DevOps", "Accessibility"],
     excerpt:
-        "“It's just a button.” Famous last words. Walk with me through how a small feature actually ships—from fuzzy idea to pixels in production—without breaking everything else.",
+        `"It's just a button." Famous last words. Walk with me through how a small feature actually ships—from fuzzy idea to pixels in production—without breaking everything else.`,
     cover: from_idea_to_app_long_journey_of_a_simple_feature,
 };
 
@@ -26,10 +26,10 @@ export default function Post() {
             <img src={meta.cover} alt={meta.title} style={{ height: "600px", width: "100%", marginBottom: "15px" }} />
 
             <p>
-                If you've ever asked a developer “Can we just add a button?”, you probably saw a nervous smile.
-                Not because we don't want to build it—but because a “simple” feature lives inside a web of users,
+                If you've ever asked a developer "Can we just add a button?", you probably saw a nervous smile.
+                Not because we don't want to build it—but because a "simple" feature lives inside a web of users,
                 data, performance, accessibility, compliance, and rollout safety. Here's a realistic guided tour using a
-                humble example: <strong>“Export to CSV”</strong> from a dashboard.
+                humble example: <strong>"Export to CSV"</strong> from a dashboard.
             </p>
 
             <Styled.Analogy>
@@ -43,7 +43,7 @@ export default function Post() {
             <h2>0) Why This Feature Exists (Problem, not Solution)</h2>
             <p>
                 Before touching code, we confirm the <em>user problem</em>. For CSV export, users might say:
-                “I need to share filtered reports with finance every Friday.” Now we have success criteria:
+                "I need to share filtered reports with finance every Friday." Now we have success criteria:
                 correct filters, correct columns, reasonable file size, and a repeatable workflow.
             </p>
 
@@ -51,14 +51,14 @@ export default function Post() {
             <ul>
                 <li><strong>Users &amp; Jobs-to-be-done:</strong> Who clicks it? How often? What's the next step (email, Excel, import)?</li>
                 <li><strong>Constraints:</strong> Max rows? PII columns? Timeouts? Mobile vs desktop?</li>
-                <li><strong>Definition of Done (DoD):</strong> “Exports filtered rows &amp; visible columns within 5s; accessible, localized filename; telemetry added.”</li>
+                <li><strong>Definition of Done (DoD):</strong> "Exports filtered rows &amp; visible columns within 5s; accessible, localized filename; telemetry added."</li>
             </ul>
 
             <h2>2) UX &amp; Content Design (0.5-1 day)</h2>
             <ul>
                 <li><strong>Placement:</strong> Primary vs. overflow menu. Avoid crowding the toolbar.</li>
                 <li><strong>States:</strong> Idle, loading, success, error (with retry).</li>
-                <li><strong>Copy:</strong> “Export CSV” &gt; “Download”; clear subtext for limits (e.g., “Max 50k rows”).</li>
+                <li><strong>Copy:</strong> "Export CSV" &gt; "Download"; clear subtext for limits (e.g., "Max 50k rows").</li>
                 <li><strong>Accessibility:</strong> Focus order, ARIA label, keyboard trigger, visible progress.</li>
             </ul>
 
@@ -69,7 +69,7 @@ export default function Post() {
                 <li><strong>Async pattern:</strong> Long exports become background jobs. Client polls <code>/jobs/:id</code> until ready.</li>
                 <li><strong>Security:</strong> Authorization per column/row (no leaking admin-only data).</li>
                 <li><strong>Performance:</strong> Stream rows; avoid loading all into memory. Compress on the fly if needed.</li>
-                <li><strong>Observability:</strong> Log job duration, row count, errors; metric: “exports per day” and “fail rate.”</li>
+                <li><strong>Observability:</strong> Log job duration, row count, errors; metric: "exports per day" and "fail rate."</li>
             </ul>
 
             <h2>4) Spike &amp; Risks (0.5 day)</h2>
@@ -83,7 +83,7 @@ export default function Post() {
             <ul>
                 <li><strong>Backend:</strong> Query builder honoring filters, streaming writer, job queue, signed URL for download.</li>
                 <li><strong>Frontend:</strong> Button → starts job → progress indicator → download link; disable while running.</li>
-                <li><strong>Error paths:</strong> Timeouts, “too many rows,” permission denied, network drop → human messages.</li>
+                <li><strong>Error paths:</strong> Timeouts, "too many rows," permission denied, network drop → human messages.</li>
                 <li><strong>i18n:</strong> Localize button text and generated filename (<code>Report_2025-06-16.csv</code>).</li>
             </ul>
 
@@ -91,7 +91,7 @@ export default function Post() {
             <ul>
                 <li><strong>Unit tests:</strong> Filters applied, column order, escaping commas/quotes/newlines.</li>
                 <li><strong>Integration tests:</strong> End-to-end export for a typical user role.</li>
-                <li><strong>A11y:</strong> Keyboard-only flow, screen reader announcements (“Export started… Export ready”).</li>
+                <li><strong>A11y:</strong> Keyboard-only flow, screen reader announcements ("Export started… Export ready").</li>
                 <li><strong>Limits:</strong> Verify warnings at 50k rows; ensure server refuses &gt;100k with a helpful error.</li>
             </ul>
 
@@ -106,19 +106,19 @@ export default function Post() {
             <ul>
                 <li><strong>Feature flag:</strong> Enable internally, then 5% of users, then 25% → 100%.</li>
                 <li><strong>Kill switch:</strong> Instant disable if error rate spikes or performance dips.</li>
-                <li><strong>Docs &amp; help:</strong> Short tooltip or “Learn more” linking to a help page.</li>
+                <li><strong>Docs &amp; help:</strong> Short tooltip or "Learn more" linking to a help page.</li>
             </ul>
 
             <h2>9) Post-Launch (ongoing)</h2>
             <ul>
                 <li><strong>Observe:</strong> Track success rate &lt; 2% failures; median export &lt; 3s.</li>
                 <li><strong>Support:</strong> Triage tickets: wrong columns, timezone issues, Excel import gotchas.</li>
-                <li><strong>Iterate:</strong> Add “Export current view” vs “Full dataset,” and scheduled exports via email.</li>
+                <li><strong>Iterate:</strong> Add "Export current view" vs "Full dataset," and scheduled exports via email.</li>
             </ul>
 
             <Styled.Analogy>
                 <p>
-                    <strong>Builder's Note:</strong> “Just a button” only works because invisible systems do the heavy lifting:
+                    <strong>Builder's Note:</strong> "Just a button" only works because invisible systems do the heavy lifting:
                     job queues, auth, logging, tests, and flags. Invest there and every future button gets cheaper.
                 </p>
             </Styled.Analogy>
@@ -139,7 +139,7 @@ export default function Post() {
             <ul>
                 <li><strong>Scope creep:</strong> Start with the highest-value slice; defer XLSX, scheduled emails, and custom columns.</li>
                 <li><strong>Silent failures:</strong> Always surface progress and errors; log with IDs users can quote to support.</li>
-                <li><strong>“Works on my machine”:</strong> Seed realistic data; test slow networks and huge filters.</li>
+                <li><strong>"Works on my machine":</strong> Seed realistic data; test slow networks and huge filters.</li>
                 <li><strong>Security gaps:</strong> Re-check permissions on the export <em>server-side</em>, not just the UI.</li>
             </ul>
 

@@ -52,7 +52,7 @@ const Fab = styled.button`
   position: fixed;
   right: calc(20px + env(safe-area-inset-right, 0px));
   bottom: calc(20px + env(safe-area-inset-bottom, 0px));
-  z-index: 40;
+  z-index: 1000;
 
   width: 44px;
   height: 44px;
@@ -61,19 +61,38 @@ const Fab = styled.button`
   display: grid;
   place-items: center;
 
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  color: #e0e0e0;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(6px);
+  /* fallback then enhanced glass */
+  background: var(--card);
+  background: color-mix(in srgb, var(--card) 82%, transparent);
+  border: 1px solid var(--border);
+  color: var(--text);
+  box-shadow: var(--shadow);
+  backdrop-filter: saturate(120%) blur(6px);
   cursor: pointer;
 
   opacity: ${(p) => (p.$visible ? 1 : 0)};
   transform: translateY(${(p) => (p.$visible ? "0" : "8px")});
   pointer-events: ${(p) => (p.$visible ? "auto" : "none")};
-  transition: opacity 0.18s ease, transform 0.18s ease, background 0.2s ease;
 
-  &:hover { background: rgba(255, 255, 255, 0.10); }
-  &:active { transform: translateY(1px); }
-  &:focus-visible { outline: 2px solid #4fc3f7; outline-offset: 2px; }
+  transition:
+    opacity 0.18s ease,
+    transform 0.18s ease,
+    background 0.25s var(--easing),
+    color 0.25s var(--easing),
+    border-color 0.25s var(--easing);
+
+  &:hover {
+    background: var(--accent-soft);
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  &:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 2px;
+  }
 `;

@@ -2,16 +2,18 @@ import styled from "styled-components";
 
 export const Styled = {
     Wrapper: styled.article`
-        color: #e0e0e0;
+        color: var(--text);
         /* max-width: 1000px; */
         /* margin: 40px auto; */
         padding: 20px;
         font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
             Roboto, sans-serif;
         line-height: 1.7;
-        background: #1a1a1a;
-        border-radius: 12px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        background: var(--card);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        max-width: 1100px;
+        margin: auto;
 
         h1,
         h2,
@@ -20,35 +22,38 @@ export const Styled = {
         h5,
         h6 {
             margin-bottom: 15px;
-            color: #fff;
+            color: var(--text);
             font-weight: 600;
         }
 
         h1 {
             font-size: 2.5rem;
             margin-top: 0;
-            color: #4fc3f7;
+            color: var(--accent);
         }
 
         h2 {
             font-size: 1.8rem;
             margin-top: 40px;
             padding-bottom: 10px;
-            border-bottom: 1px solid #333;
-            color: #4fc3f7;
+            border-bottom: 1px solid var(--border);
+            color: var(--accent);
         }
 
         p {
             margin-bottom: 20px;
             font-size: 1.1rem;
+            color: var(--text);
         }
 
         code {
-            background: #2d2d2d;
+            background: var(--surface);
             padding: 2px 6px;
-            border-radius: 4px;
-            font-family: "Fira Code", monospace;
-            color: #ffa726;
+            border-radius: 6px;
+            font-family: "Fira Code", ui-monospace, SFMono-Regular, Menlo,
+                Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            color: var(--warning);
+            border: 1px solid var(--border);
         }
 
         ul {
@@ -61,36 +66,38 @@ export const Styled = {
         }
 
         em {
-            color: #9ccc65;
+            color: var(--success);
             font-style: italic;
         }
 
         strong {
-            color: #fff;
+            color: var(--text);
             font-weight: 600;
         }
     `,
+
     Info: styled.div`
-        border-bottom: 1px solid #333;
+        border-bottom: 1px solid var(--border);
         padding-bottom: 30px;
         margin-bottom: 30px;
 
         div {
             font-style: italic;
             margin: 8px 0;
-            color: #aaa;
+            color: var(--muted);
         }
     `,
+
     Analogy: styled.div`
-        background: #2d2d2d;
-        border-left: 4px solid #4fc3f7;
+        background: var(--surface);
+        border-left: 4px solid var(--accent);
         padding: 15px 20px;
         margin: 25px 0;
         border-radius: 0 8px 8px 0;
 
         p {
             margin: 0;
-            color: #e0e0e0;
+            color: var(--text);
         }
     `,
 };
