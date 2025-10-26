@@ -1,0 +1,51 @@
+<svg width="1400" height="560" viewBox="0 0 1400 560" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#5aa9ff" offset="0"/>
+      <stop stop-color="#2f74ff" offset="1"/>
+    </linearGradient>
+    <style>
+      .t{font:600 20px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill:#f3f4f6}
+      .s{font:400 16px Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; fill:#a0a0a7}
+      .card{fill:#121214;stroke:#262626;stroke-width:1.5}
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="#0b0b0b"/>
+  <text x="700" y="54" text-anchor="middle" class="t" font-size="28">Learning by Doing — Pick the Runtime by Constraint, Not Habit</text>
+
+  <!-- React -->
+  <rect x="70" y="100" rx="16" ry="16" width="300" height="380" class="card"/>
+  <rect x="70" y="100" rx="16" ry="16" width="300" height="56" fill="url(#g)"/>
+  <text x="220" y="138" text-anchor="middle" class="t">React (UX)</text>
+  <text x="90" y="190" class="s">• Streaming UI, optimistic states</text>
+  <text x="90" y="220" class="s">• Suspense + abortable requests</text>
+  <text x="90" y="250" class="s">• Errors/retries as UX</text>
+  <text x="90" y="280" class="s">• Skeletons &gt; spinners</text>
+
+  <!-- Browser -->
+  <rect x="380" y="100" rx="16" ry="16" width="300" height="380" class="card"/>
+  <rect x="380" y="100" rx="16" ry="16" width="300" height="56" fill="url(#g)"/>
+  <text x="530" y="138" text-anchor="middle" class="t">Browser (Privacy/Offline)</text>
+  <text x="400" y="190" class="s">• IndexedDB vector store</text>
+  <text x="400" y="220" class="s">• Web Workers/WebGPU path</text>
+  <text x="400" y="250" class="s">• Zero server for read-only</text>
+  <text x="400" y="280" class="s">• Bundle trade-offs</text>
+
+  <!-- Node -->
+  <rect x="690" y="100" rx="16" ry="16" width="300" height="380" class="card"/>
+  <rect x="690" y="100" rx="16" ry="16" width="300" height="56" fill="url(#g)"/>
+  <text x="840" y="138" text-anchor="middle" class="t">Node.js (Integration)</text>
+  <text x="710" y="190" class="s">• Retrieve → rerank → answer</text>
+  <text x="710" y="220" class="s">• Guardrails &amp; rate limits</text>
+  <text x="710" y="250" class="s">• Caching &amp; logging (p95)</text>
+  <text x="710" y="280" class="s">• Streaming endpoints</text>
+
+  <!-- Python -->
+  <rect x="1000" y="100" rx="16" ry="16" width="300" height="380" class="card"/>
+  <rect x="1000" y="100" rx="16" ry="16" width="300" height="56" fill="url(#g)"/>
+  <text x="1150" y="138" text-anchor="middle" class="t">Python (Experiments/Eval)</text>
+  <text x="1020" y="190" class="s">• nDCG/ROUGE/F1</text>
+  <text x="1020" y="220" class="s">• Batch jobs &amp; artifacts</text>
+  <text x="1020" y="250" class="s">• Repro + versions</text>
+  <text x="1020" y="280" class="s">• Truth &gt; vibes</text>
+</svg>
