@@ -1,38 +1,41 @@
-# a2rp Blogs
+# a2rp Journal
 
-> Tech, explained on Sundays - plain-English posts on AI, privacy, networking, UX, and the messy reality of building software.
+A focused React and Vite blog for clear, practical technology essays about the internet, software, privacy, and everyday digital life.
 
-**Live site:** https://a2rp.github.io/blog/
-**Repo:** https://github.com/a2rp/blog
-
----
+![a2rp Journal preview](screenshot.png)
 
 ## Features
 
--   🔎 **Search + Filters**: full-text search; filter by Year / Month / Category / Tag; sort Newest/Oldest.
--   🏷️ **Consistent tags**: normalized tag set for better filtering/related posts.
--   🖼️ **Covers**: per-post hero image with lazy loading + fallback.
--   ⬆️ **Scroll-to-Top FAB**: reduced-motion aware, accessible.
--   📚 **Manual "All Posts" list**: simple `<ul><li><NavLink/></li></ul>` sidebar component.
+- Fixed desktop navigation with searchable post list
+- Responsive mobile menu
+- Search, filters, tags, and date sorting
+- Lazy-loaded article pages with previous and next navigation
+- Dark and light themes with saved preference
+- GitHub Pages deployment
 
----
-
-## Getting Started
+## Run locally
 
 ```bash
-# clone
-git clone https://github.com/a2rp/blog
-cd blog
-
-# install
-npm i
-
-# dev
+npm install
 npm run dev
-
-# build
-npm run build
-
-# preview build
-npm run preview
 ```
+
+Build with `npm run build` and deploy with `npm run deploy`.
+
+## Links
+
+- Live: https://a2rp.github.io/blog/
+- Repository: https://github.com/a2rp/blog
+- Portfolio: https://www.ashishranjan.net/
+- GitHub: https://github.com/a2rp
+- CodePen: https://codepen.io/ash1198
+- LinkedIn: https://www.linkedin.com/in/aashishranjan
+- Facebook: https://www.facebook.com/theash.ashish/
+- YouTube: https://www.youtube.com/@ashishranjan-ashz?sub_confirmation=1
+- Email: mailto:ash.ranjan09@gmail.com
+
+## Support
+
+- Support: https://a2rp-donation-page.netlify.app/
+- Buy Me a Coffee: https://buymeacoffee.com/a2rp
+- Patreon: https://www.patreon.com/a2rp

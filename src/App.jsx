@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Styled } from './App.styled'
 import Footer from './components/footer'
 import Header from './components/header'
@@ -20,11 +20,18 @@ const App = () => {
         <>
             <Styled.Wrapper>
                 <Header handleSliderButtonClick={handleSliderButtonClick} />
-                <Styled.Main>
-                    <ScrollToTop />
-                    <AppRoutes />
-                </Styled.Main>
-                <Footer />
+                <Styled.Layout>
+                    <Styled.Sidebar aria-label="Blog navigation">
+                        <NavList />
+                    </Styled.Sidebar>
+                    <Styled.Content>
+                        <Styled.Main>
+                            <ScrollToTop />
+                            <AppRoutes />
+                        </Styled.Main>
+                        <Footer />
+                    </Styled.Content>
+                </Styled.Layout>
             </Styled.Wrapper>
             <ScrollToTopButton threshold={101} />
 

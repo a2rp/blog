@@ -6,7 +6,9 @@ export const Styled = {
     Wrapper: styled.header`
         position: fixed;
         inset: 0 0 auto 0;
+        width: 100%;
         height: ${HEADER_H}px;
+        box-sizing: border-box;
         background: var(--surface);
         color: var(--text);
         border-bottom: 1px solid var(--border);
@@ -22,6 +24,8 @@ export const Styled = {
         justify-content: space-between;
         gap: 16px;
         width: 100%;
+        max-width: none;
+        margin: 0;
         padding: 0 16px;
     `,
 
@@ -46,7 +50,7 @@ export const Styled = {
         }
     `,
 
-    ThemeButton: styled.div`
+    ThemeButton: styled.button`
         display: inline-grid;
         place-items: center;
         width: 36px;
@@ -69,7 +73,7 @@ export const Styled = {
         }
     `,
 
-    SliderButton: styled.div`
+    SliderButton: styled.button`
         display: inline-grid;
         place-items: center;
         width: 36px;

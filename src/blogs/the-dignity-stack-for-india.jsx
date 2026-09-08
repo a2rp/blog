@@ -67,9 +67,9 @@ const db = await openDB("app", 1, { upgrade(db) {
 
 function deterministicId(deviceId) {
   // example: 20251011T142301Z-deviceId-000042
-  const ts = new Date().toISOString().replace(/\..+/, "").replace(/[-:]/g, "");
+  const ts = new Date().toISOString().split(".")[0].replace(/[-:]/g, "");
   const counter = String(Math.floor(Math.random() * 999999)).padStart(6, "0");
-  return \`\${ts}-\${deviceId}-\${counter}\`;
+  return ts + "-" + deviceId + "-" + counter;
 }
 
 async function createItem(local) {

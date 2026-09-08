@@ -7,9 +7,9 @@ export default function ScrollToTop({ smooth = true }) {
     // Disable browser's automatic scroll restoration (so back doesn't restore old position)
     useEffect(() => {
         const prev = window.history.scrollRestoration;
-        try { window.history.scrollRestoration = "manual"; } catch { }
+        try { window.history.scrollRestoration = "manual"; } catch { /* unsupported */ }
         return () => {
-            try { window.history.scrollRestoration = prev || "auto"; } catch { }
+            try { window.history.scrollRestoration = prev || "auto"; } catch { /* unsupported */ }
         };
     }, []);
 

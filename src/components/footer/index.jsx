@@ -9,7 +9,7 @@ const Footer = () => {
                     &copy; {new Date().getFullYear()} | All Rights Reserved.
                 </Styled.FooterCol>
                 <Styled.FooterCol>
-                    By <a href="https://www.ashishranjan.net" target="_blank">Ashish Ranjan</a>
+                    By <a href="https://www.ashishranjan.net/" target="_blank" rel="noreferrer">Ashish Ranjan</a>
                 </Styled.FooterCol>
             </Styled.FooterMain>
         </Styled.Footer>

@@ -1,5 +1,5 @@
 import React, { Suspense, useEffect, useMemo } from "react";
-import { NavLink, useNavigate, useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import { Styled } from "./styled";
 import { formatDate } from "../../utils/format";
 import { Box, CircularProgress } from "@mui/material";
@@ -24,7 +24,6 @@ function allPosts() {
 }
 
 export default function Blog() {
-    const navigate = useNavigate();
     const { slug } = useParams();
     const posts = useMemo(() => allPosts(), []);
 
@@ -35,6 +34,10 @@ export default function Blog() {
     const idx = posts.findIndex((p) => p.slug === slug);
     const prev = idx > 0 ? posts[idx - 1] : null;
     const next = idx >= 0 && idx < posts.length - 1 ? posts[idx + 1] : null;
+
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: "auto" });
+    }, [slug]);
 
     if (!key || idx === -1) {
         return (
@@ -51,12 +54,6 @@ export default function Blog() {
     }
 
     const PostComp = React.lazy(loaders[key]);
-    const canGoBack = window.history.state?.idx > 0;
-
-    useEffect(() => {
-        window.scrollTo({ top: 0, behavior: "auto" });
-    }, [slug]);
-
     return (
         <Styled.Wrapper>
             <Styled.Main>

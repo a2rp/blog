@@ -1,5 +1,5 @@
 {
-    "name": "frontend",
+    "name": "a2rp-blog",
     "private": true,
     "version": "0.0.0",
     "type": "module",
@@ -10,7 +10,7 @@
         "preview": "vite preview",
         "postbuild": "cp dist/index.html dist/404.html || copy dist\\index.html dist\\404.html",
         "predeploy": "npm run build",
-        "deploy": "npx gh-pages -d dist -b gh-pages"
+        "deploy": "npx --yes gh-pages -d dist -b gh-pages"
     },
     "dependencies": {
         "@emotion/react": "^11.14.0",

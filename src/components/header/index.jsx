@@ -10,7 +10,7 @@ function getInitialTheme() {
     try {
         const saved = localStorage.getItem(THEME_KEY);
         if (saved === "light" || saved === "dark") return saved;
-    } catch { }
+    } catch { return "dark"; }
     // If nothing saved, infer from current DOM / OS
     const isLightAttr = document.documentElement.getAttribute("data-theme") === "light";
     if (isLightAttr) return "light";
@@ -30,7 +30,7 @@ const Header = ({ handleSliderButtonClick }) => {
             // our CSS uses dark as the default when no data-theme is set
             root.removeAttribute("data-theme");
         }
-        try { localStorage.setItem(THEME_KEY, theme); } catch { }
+        try { localStorage.setItem(THEME_KEY, theme); } catch { /* storage unavailable */ }
     }, [theme]);
 
     const toggleTheme = useCallback(() => {
@@ -42,13 +42,22 @@ const Header = ({ handleSliderButtonClick }) => {
             <Styled.Main className="container">
                 <Styled.Col>
                     <Styled.Brand as={NavLink} to="/" aria-label="Go to home">
-                        Blogs
+                        a2rp / journal
                     </Styled.Brand>
                 </Styled.Col>
 
                 <Styled.Col>
                     <Styled.ThemeButton
+                        as="div"
+                        role="button"
+                        tabIndex={0}
                         onClick={toggleTheme}
+                        onKeyDown={(event) => {
+                            if (event.key === "Enter" || event.key === " ") {
+                                event.preventDefault();
+                                toggleTheme();
+                            }
+                        }}
                         aria-pressed={theme === "light"}
                         title={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
                     >
@@ -57,9 +66,18 @@ const Header = ({ handleSliderButtonClick }) => {
                     </Styled.ThemeButton>
 
                     <Styled.SliderButton
+                        as="div"
+                        role="button"
+                        tabIndex={0}
                         aria-label="Open menu"
                         title="Open menu"
                         onClick={handleSliderButtonClick}
+                        onKeyDown={(event) => {
+                            if (event.key === "Enter" || event.key === " ") {
+                                event.preventDefault();
+                                handleSliderButtonClick();
+                            }
+                        }}
                     >
                         <IoIosMenu size={16} />
                     </Styled.SliderButton>

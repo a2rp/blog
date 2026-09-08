@@ -67,7 +67,7 @@ const NavList = () => {
         try { return sessionStorage.getItem(STORAGE_KEY) ?? ""; } catch { return ""; }
     });
     useEffect(() => {
-        try { sessionStorage.setItem(STORAGE_KEY, query); } catch { }
+        try { sessionStorage.setItem(STORAGE_KEY, query); } catch { /* storage unavailable */ }
     }, [query]);
 
     useEffect(() => {
@@ -117,9 +117,21 @@ const NavList = () => {
                         aria-label="Search posts"
                         onKeyDown={(e) => { if (e.key === "Escape") clear(); }}
                     />
-                    <button className="clear" type="button" onClick={clear} title="Clear search">
+                    <div
+                        className="clear"
+                        role="button"
+                        tabIndex={0}
+                        onClick={clear}
+                        onKeyDown={(event) => {
+                            if (event.key === "Enter" || event.key === " ") {
+                                event.preventDefault();
+                                clear();
+                            }
+                        }}
+                        title="Clear search"
+                    >
                         <MdClear size={18} />
-                    </button>
+                    </div>
                     <div className="meta">
                         <span>{results.length} result{results.length !== 1 ? "s" : ""}</span>
                         {query ? <span>Filtering: “{query}”</span> : <span>Type to filter</span>}
