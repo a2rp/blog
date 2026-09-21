@@ -21,32 +21,48 @@ export const Styled = {
         @media (width < 900px) {
             padding: 15px;
             flex-direction: column;
-            text-align: center;
+            align-items: flex-start;
             gap: 8px;
         }
     `,
-    FooterCol: styled.div`
+    Copyright: styled.p`
+        margin: 0;
         font-size: 12px;
         color: var(--muted);
-
         a {
             color: var(--text);
             text-decoration: none;
-            border-bottom: 1px dotted transparent;
-            transition: color 0.25s var(--easing),
-                border-color 0.25s var(--easing), background 0.25s var(--easing);
-
+            font-weight: 700;
+            transition: text-shadow 0.25s var(--easing);
             &:hover {
-                color: var(--accent);
-                border-color: var(--accent);
-                background: var(--accent-soft);
-                border-radius: 4px;
+                text-shadow: 0 0 10px var(--accent);
             }
-
-            &:focus-visible {
-                outline: 3px solid var(--accent);
-                outline-offset: 2px;
-            }
+        }
+    `,
+    Links: styled.nav`
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 8px;
+    `,
+    Link: styled.a`
+        width: 34px;
+        height: 34px;
+        display: grid;
+        place-items: center;
+        border: 1px solid var(--border);
+        border-radius: 9px;
+        color: var(--muted);
+        text-decoration: none;
+        transition: border-color 0.25s var(--easing), box-shadow 0.25s var(--easing), text-shadow 0.25s var(--easing);
+        svg {
+            width: 16px;
+            height: 16px;
+        }
+        &:hover {
+            border-color: var(--accent);
+            box-shadow: 0 0 16px var(--accent-soft);
+            text-shadow: 0 0 10px var(--accent);
         }
     `,
 };

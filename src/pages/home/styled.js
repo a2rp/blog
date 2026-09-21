@@ -74,12 +74,13 @@ export const Styled = {
             justify-content: center;
             cursor: pointer;
             color: var(--muted);
-            transition: color 0.25s var(--easing),
-                background 0.25s var(--easing);
+            transition: border-color 0.25s var(--easing),
+                box-shadow 0.25s var(--easing), text-shadow 0.25s var(--easing);
             border-left: 1px solid var(--border);
             &:hover {
-                color: var(--accent);
-                background: var(--accent-soft);
+                border-left-color: var(--accent);
+                box-shadow: -4px 0 12px var(--accent-soft);
+                text-shadow: 0 0 10px var(--accent);
             }
         }
     `,
@@ -119,11 +120,11 @@ export const Styled = {
             white-space: nowrap;
             height: 30px;
             transition: border-color 0.25s var(--easing),
-                background 0.25s var(--easing), color 0.25s var(--easing);
+                box-shadow 0.25s var(--easing), text-shadow 0.25s var(--easing);
             &:hover {
                 border-color: var(--accent);
-                color: var(--accent);
-                background: var(--accent-soft);
+                box-shadow: 0 0 12px var(--accent-soft);
+                text-shadow: 0 0 8px var(--accent);
             }
             &:focus-visible {
                 outline: 3px solid var(--accent);
@@ -147,12 +148,11 @@ export const Styled = {
         max-width: 300px;
         height: 450px;
         position: relative;
-        transition: transform 0.2s var(--easing), box-shadow 0.2s var(--easing),
+        transition: box-shadow 0.2s var(--easing),
             border-color 0.2s var(--easing);
         flex: 1 1 300px;
 
         &:hover {
-            transform: translateY(-3px);
             box-shadow: var(--shadow);
             border-color: var(--accent);
         }
@@ -182,11 +182,11 @@ export const Styled = {
             padding: 3px;
             border-bottom: 1px solid transparent;
             transition: border-color 0.25s var(--easing),
-                background 0.25s var(--easing), color 0.25s var(--easing);
+                box-shadow 0.25s var(--easing), text-shadow 0.25s var(--easing);
             &:hover {
                 border-bottom: 1px solid var(--accent);
-                background: var(--accent-soft);
                 border-radius: 4px;
+                text-shadow: 0 0 8px var(--accent);
             }
             &:focus-visible {
                 outline: 3px solid var(--accent);
@@ -245,11 +245,11 @@ export const Styled = {
         background: var(--surface);
         color: var(--text);
         transition: border-color 0.25s var(--easing),
-            background 0.25s var(--easing), color 0.25s var(--easing);
+            box-shadow 0.25s var(--easing), text-shadow 0.25s var(--easing);
         &:hover {
             border-color: var(--accent);
-            background: var(--accent-soft);
-            color: var(--accent);
+            box-shadow: 0 0 12px var(--accent-soft);
+            text-shadow: 0 0 8px var(--accent);
         }
     `,
 };

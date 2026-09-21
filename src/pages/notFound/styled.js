@@ -50,15 +50,12 @@ export const Styled = {
         border-radius: 12px;
         cursor: pointer;
         font-weight: 600;
-        transition: transform 0.08s ease, box-shadow 0.08s ease,
-            opacity 0.2s ease;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease,
+            text-shadow 0.2s ease;
         &:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
-        }
-        &:active {
-            transform: translateY(0);
-            box-shadow: none;
+            border-color: #fff;
+            box-shadow: 0 0 14px rgba(255, 127, 127, 0.55);
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
         }
     `,
     OutlineButton: styled.button`
@@ -70,10 +67,12 @@ export const Styled = {
         border-radius: 12px;
         cursor: pointer;
         font-weight: 600;
-        transition: background 0.2s ease, color 0.2s ease;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease,
+            text-shadow 0.2s ease;
         &:hover {
-            background: #111;
-            color: #fff;
+            border-color: #111;
+            box-shadow: 0 0 12px rgba(17, 17, 17, 0.22);
+            text-shadow: 0 0 8px rgba(17, 17, 17, 0.35);
         }
     `,
     Hint: styled.p`

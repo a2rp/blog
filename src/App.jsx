@@ -12,10 +12,6 @@ const App = () => {
     const handleSliderButtonClick = () => {
         setDisplaySlider(prev => !prev);
     };
-    // useEffect(() => {
-    //     console.log("display slider", displaySlider);
-    // }, [displaySlider]);
-
     return (
         <>
             <Styled.Wrapper>

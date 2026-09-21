@@ -77,18 +77,14 @@ const Fab = styled.button`
   transition:
     opacity 0.18s ease,
     transform 0.18s ease,
-    background 0.25s var(--easing),
-    color 0.25s var(--easing),
-    border-color 0.25s var(--easing);
+    border-color 0.25s var(--easing),
+    box-shadow 0.25s var(--easing),
+    text-shadow 0.25s var(--easing);
 
   &:hover {
-    background: var(--accent-soft);
     border-color: var(--accent);
-    color: var(--accent);
-  }
-
-  &:active {
-    transform: translateY(1px);
+    box-shadow: 0 0 16px var(--accent-soft);
+    text-shadow: 0 0 10px var(--accent);
   }
 
   &:focus-visible {

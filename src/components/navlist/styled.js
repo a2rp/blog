@@ -57,12 +57,12 @@ export const Styled = {
             border: 1px solid var(--border);
             cursor: pointer;
             transition: border-color 0.25s var(--easing),
-                background 0.25s var(--easing), color 0.25s var(--easing);
+                box-shadow 0.25s var(--easing), text-shadow 0.25s var(--easing);
         }
         button.clear:hover {
             border-color: var(--accent);
-            color: var(--accent);
-            background: var(--accent-soft);
+            box-shadow: 0 0 14px var(--accent-soft);
+            text-shadow: 0 0 10px var(--accent);
         }
 
         .meta {
@@ -101,8 +101,8 @@ export const Styled = {
         background: transparent;
         color: var(--text);
         text-decoration: none;
-        transition: background 0.25s var(--easing),
-            border-color 0.25s var(--easing), color 0.25s var(--easing);
+        transition: border-color 0.25s var(--easing),
+            box-shadow 0.25s var(--easing), text-shadow 0.25s var(--easing);
 
         &.active {
             color: var(--accent);
@@ -110,8 +110,9 @@ export const Styled = {
             border-color: var(--accent);
         }
         &:hover {
-            background: rgba(255, 255, 255, 0.03);
-            border-color: var(--border);
+            border-color: var(--accent);
+            box-shadow: 0 0 14px var(--accent-soft);
+            text-shadow: 0 0 10px var(--accent);
         }
 
         .title {
@@ -145,12 +146,12 @@ export const Styled = {
             border-radius: 999px;
             cursor: pointer;
             transition: border-color 0.25s var(--easing),
-                background 0.25s var(--easing), color 0.25s var(--easing);
+                box-shadow 0.25s var(--easing), text-shadow 0.25s var(--easing);
         }
         .tag:hover {
             border-color: var(--accent);
-            color: var(--accent);
-            background: var(--accent-soft);
+            box-shadow: 0 0 12px var(--accent-soft);
+            text-shadow: 0 0 8px var(--accent);
         }
 
         .date {

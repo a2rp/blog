@@ -18,11 +18,11 @@ export const Styled = {
             text-decoration: none;
             padding: 5px;
             border-bottom: 1px solid var(--accent);
-            transition: color 0.25s var(--easing),
-                border-color 0.25s var(--easing), background 0.25s var(--easing);
+            transition: border-color 0.25s var(--easing),
+                box-shadow 0.25s var(--easing), text-shadow 0.25s var(--easing);
             &:hover {
-                border-bottom: none;
-                background: var(--accent-soft);
+                border-bottom-color: var(--text);
+                text-shadow: 0 0 8px var(--accent);
                 border-radius: 4px;
             }
             &:focus-visible {
@@ -41,11 +41,11 @@ export const Styled = {
             display: inline-flex;
             gap: 15px;
             transition: border-color 0.25s var(--easing),
-                color 0.25s var(--easing), background 0.25s var(--easing);
+                box-shadow 0.25s var(--easing), text-shadow 0.25s var(--easing);
             &:hover {
                 border-color: var(--accent);
-                color: var(--accent);
-                background: var(--accent-soft);
+                box-shadow: 0 0 14px var(--accent-soft);
+                text-shadow: 0 0 10px var(--accent);
             }
         }
 
@@ -73,11 +73,11 @@ export const Styled = {
                 width: 100%;
                 text-decoration: none;
                 transition: border-color 0.25s var(--easing),
-                    color 0.25s var(--easing), background 0.25s var(--easing);
+                    box-shadow 0.25s var(--easing), text-shadow 0.25s var(--easing);
                 &:hover {
                     border-color: var(--accent);
-                    color: var(--accent);
-                    background: var(--accent-soft);
+                    box-shadow: 0 0 14px var(--accent-soft);
+                    text-shadow: 0 0 10px var(--accent);
                 }
             }
         }
@@ -128,9 +128,8 @@ export const Styled = {
                 line-height: 2;
 
                 &:hover {
-                    color: var(--accent);
-                    background: var(--accent-soft);
                     border-radius: 4px;
+                    text-shadow: 0 0 8px var(--accent);
                 }
             }
         }
@@ -155,12 +154,11 @@ export const Styled = {
                     flex: 1 1 300px;
                     background: var(--card);
                     transition: border-color 0.25s var(--easing),
-                        transform 0.15s var(--easing),
-                        background 0.25s var(--easing);
+                        box-shadow 0.25s var(--easing), text-shadow 0.25s var(--easing);
                     &:hover {
                         border-color: var(--accent);
-                        transform: translateY(-1px);
-                        background: var(--accent-soft);
+                        box-shadow: 0 0 14px var(--accent-soft);
+                        text-shadow: 0 0 10px var(--accent);
                     }
 
                     .postDate {

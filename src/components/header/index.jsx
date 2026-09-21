@@ -42,22 +42,17 @@ const Header = ({ handleSliderButtonClick }) => {
             <Styled.Main className="container">
                 <Styled.Col>
                     <Styled.Brand as={NavLink} to="/" aria-label="Go to home">
-                        a2rp / journal
+                        <Styled.Logo
+                            src={`${import.meta.env.BASE_URL}logo.png`}
+                            alt="a2rp Journal logo"
+                        />
+                        <Styled.BrandText>a2rp / journal</Styled.BrandText>
                     </Styled.Brand>
                 </Styled.Col>
 
                 <Styled.Col>
                     <Styled.ThemeButton
-                        as="div"
-                        role="button"
-                        tabIndex={0}
                         onClick={toggleTheme}
-                        onKeyDown={(event) => {
-                            if (event.key === "Enter" || event.key === " ") {
-                                event.preventDefault();
-                                toggleTheme();
-                            }
-                        }}
                         aria-pressed={theme === "light"}
                         title={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
                     >
@@ -66,18 +61,9 @@ const Header = ({ handleSliderButtonClick }) => {
                     </Styled.ThemeButton>
 
                     <Styled.SliderButton
-                        as="div"
-                        role="button"
-                        tabIndex={0}
                         aria-label="Open menu"
                         title="Open menu"
                         onClick={handleSliderButtonClick}
-                        onKeyDown={(event) => {
-                            if (event.key === "Enter" || event.key === " ") {
-                                event.preventDefault();
-                                handleSliderButtonClick();
-                            }
-                        }}
                     >
                         <IoIosMenu size={16} />
                     </Styled.SliderButton>

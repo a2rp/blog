@@ -73,7 +73,7 @@ export default function Post() {
                 <img
                     src={FIG_ARCH}
                     alt="Four lanes: React (UX), Browser (privacy/offline), Node (integration/guardrails), Python (experiments/eval)"
-                    onError={(e) => { console.error("ARCH SVG failed:", FIG_ARCH); e.currentTarget.src = FALLBACK_SVG; }}
+                    onError={(event) => { event.currentTarget.src = FALLBACK_SVG; }}
                     style={{ borderRadius: 12 }}
                 />
 
@@ -348,7 +348,7 @@ export default function AskBox() {
         setAns((prev) => prev + dec.decode(value, { stream: true }));
       }
     } catch (e) {
-      if (e.name !== "AbortError") console.error(e);
+      if (e.name !== "AbortError") setAns("The answer service is unavailable right now.");
     } finally {
       setBusy(false);
     }
@@ -500,7 +500,7 @@ app.post("/answer", (req, res) => {
   res.json({ summary, sources: store.docs.slice(0, 3).map((d) => d.id) });
 });
 
-app.listen(1198, () => console.log("AI service on :1198"));`;
+app.listen(1198);`;
 
 const pythonEvalSnippet = `# Python — tiny retrieval evaluation (nDCG@3) + batch embed cache
 import math, json
