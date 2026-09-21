@@ -1,4 +1,4 @@
-import{d as e,X as r,j as t,N as a}from"./index-B42va_G0.js";const n={Wrapper:e.div`
+import{d as e,X as n,j as o,N as a}from"./index-Bfig8YMp.js";const t={Wrapper:e.div`
         background-color: #111;
         padding: 15px;
         display: flex;
@@ -41,15 +41,12 @@ import{d as e,X as r,j as t,N as a}from"./index-B42va_G0.js";const n={Wrapper:e.
         border-radius: 12px;
         cursor: pointer;
         font-weight: 600;
-        transition: transform 0.08s ease, box-shadow 0.08s ease,
-            opacity 0.2s ease;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease,
+            text-shadow 0.2s ease;
         &:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
-        }
-        &:active {
-            transform: translateY(0);
-            box-shadow: none;
+            border-color: #fff;
+            box-shadow: 0 0 14px rgba(255, 127, 127, 0.55);
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
         }
     `,OutlineButton:e.button`
         appearance: none;
@@ -60,10 +57,12 @@ import{d as e,X as r,j as t,N as a}from"./index-B42va_G0.js";const n={Wrapper:e.
         border-radius: 12px;
         cursor: pointer;
         font-weight: 600;
-        transition: background 0.2s ease, color 0.2s ease;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease,
+            text-shadow 0.2s ease;
         &:hover {
-            background: #111;
-            color: #fff;
+            border-color: #111;
+            box-shadow: 0 0 12px rgba(17, 17, 17, 0.22);
+            text-shadow: 0 0 8px rgba(17, 17, 17, 0.35);
         }
     `,Hint:e.p`
         color: #888;
@@ -85,4 +84,4 @@ import{d as e,X as r,j as t,N as a}from"./index-B42va_G0.js";const n={Wrapper:e.
         margin-top: 28px;
         font-size: 13px;
         color: #777;
-    `},l=()=>{const o=r();return t.jsx(n.Wrapper,{role:"main","aria-labelledby":"nf-title",children:t.jsxs(n.Inner,{children:[t.jsx(n.Code,{children:"404"}),t.jsx(n.Title,{id:"nf-title",children:"Page not found"}),t.jsx(n.Subtitle,{children:"The page you're looking for may have moved, been renamed, or never existed."}),t.jsxs(n.Actions,{children:[t.jsx(n.Button,{onClick:()=>o(-1),"aria-label":"Go back",children:"Go back"}),t.jsx(a,{to:"/",children:t.jsx(n.Button,{as:"span",children:"Go home"})})]}),t.jsx(n.Small,{children:"Availability: Open to full-time roles (Bengaluru/remote) & select freelance projects."})]})})};export{l as default};
+    `},s=()=>{const r=n();return o.jsx(t.Wrapper,{role:"main","aria-labelledby":"nf-title",children:o.jsxs(t.Inner,{children:[o.jsx(t.Code,{children:"404"}),o.jsx(t.Title,{id:"nf-title",children:"Page not found"}),o.jsx(t.Subtitle,{children:"The page you're looking for may have moved, been renamed, or never existed."}),o.jsxs(t.Actions,{children:[o.jsx(t.Button,{onClick:()=>r(-1),"aria-label":"Go back",children:"Go back"}),o.jsx(a,{to:"/",children:o.jsx(t.Button,{as:"span",children:"Go home"})})]}),o.jsx(t.Small,{children:"Availability: Open to full-time roles (Bengaluru/remote) & select freelance projects."})]})})};export{s as default};
