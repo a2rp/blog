@@ -1,17 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import the_uber_effect_how_an_app_disrupts_industries from "../assets/covers/the-uber-effect-how-an-app-disrupts-industries.png";
 
-export const meta = {
-    title: `The "Uber Effect": How an App Can Disrupt an Entire Industry`,
-    slug: "the-uber-effect-how-an-app-disrupts-industries",
-    date: "2025-07-28",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "Summer & Tech",
-    tags: ["Platforms", "AI", "DevOps"],
-    excerpt:
-        "What looks like 'just an app' is often a new market structure. Here's how two-sided marketplaces, trust systems, and dynamic pricing can upend entire industries—and the trade-offs that follow.",
-    cover: the_uber_effect_how_an_app_disrupts_industries,
-};
+const meta = postsBySlug["the-uber-effect-how-an-app-disrupts-industries"];
 
 export default function Post() {
     return (

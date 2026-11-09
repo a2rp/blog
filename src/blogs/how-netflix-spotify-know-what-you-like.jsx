@@ -1,16 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import how_netflix_spotify_know_what_you_like from "../assets/covers/how-netflix-spotify-know-what-you-like.png";
 
-export const meta = {
-    title: "The Invisible UI: How Apps Like Netflix and Spotify REALLY Know What You'll Like",
-    slug: "how-netflix-spotify-know-what-you-like",
-    date: "2025-02-25",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "Behind The Digital Curtain",
-    tags: ["AI", "Platforms", "UX"],
-    excerpt: "It feels like magic when Netflix suggests the perfect show or Spotify creates a playlist that reads your mind. But it's not magic—it's a fascinating blend of math, data, and clever design meant to keep you watching and listening.",
-    cover: how_netflix_spotify_know_what_you_like,
-};
+const meta = postsBySlug["how-netflix-spotify-know-what-you-like"];
 
 export default function Post() {
     return (

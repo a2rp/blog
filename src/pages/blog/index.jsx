@@ -3,20 +3,19 @@ import { NavLink, useParams } from "react-router-dom";
 import { Styled } from "./styled";
 import { formatDate } from "../../utils/format";
 import { Box, CircularProgress } from "@mui/material";
+import { posts as blogPosts } from "../../blogMetadata.js";
 
 // Lazy loaders for components
 const loaders = import.meta.glob("../../blogs/*.jsx");
-// Eager meta for list/navigation
-const metaModules = import.meta.glob("../../blogs/*.jsx", { eager: true });
-
+const postComponents = Object.fromEntries(
+    Object.entries(loaders).map(([path, loader]) => [path, React.lazy(loader)])
+);
 function allPosts() {
-    return Object.entries(metaModules)
-        .map(([path, mod]) => {
-            const fileSlug = path.split("/").pop().replace(".jsx", "");
-            const m = mod?.meta || {};
+    return blogPosts
+        .map((m) => {
             return {
-                slug: m.slug || fileSlug,
-                title: m.title || fileSlug,
+                slug: m.slug || m.fileSlug,
+                title: m.title || m.fileSlug,
                 date: m.date || "1970-01-01",
             };
         })
@@ -27,9 +26,8 @@ export default function Blog() {
     const { slug } = useParams();
     const posts = useMemo(() => allPosts(), []);
 
-    const key =
-        Object.keys(loaders).find((k) => k.endsWith(`/${slug}.jsx`)) ||
-        Object.keys(metaModules).find((k) => metaModules[k]?.meta?.slug === slug);
+    const post = blogPosts.find((item) => item.slug === slug);
+    const key = Object.keys(loaders).find((item) => item.endsWith(`/${post?.fileSlug || slug}.jsx`));
 
     const idx = posts.findIndex((p) => p.slug === slug);
     const prev = idx > 0 ? posts[idx - 1] : null;
@@ -53,7 +51,7 @@ export default function Blog() {
         );
     }
 
-    const PostComp = React.lazy(loaders[key]);
+    const PostComp = postComponents[key];
     return (
         <Styled.Wrapper>
             <Styled.Main>

@@ -1,16 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import why_website_projects_cost_more_than_you_think from "../assets/covers/why-website-projects-cost-more-than-you-think.png";
 
-export const meta = {
-    title: "The Hidden Work: Why Your Website Project Costs More Than You Think",
-    slug: "why-website-projects-cost-more-than-you-think",
-    date: "2025-03-31",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "Behind The Digital Curtain",
-    tags: ["Web Basics", "UX", "DevOps"],
-    excerpt: "That quote for a new website seems high for 'just putting some text and pictures online.' But beneath the visible surface lies an iceberg of planning, testing, and decisions that clients never see.",
-    cover: why_website_projects_cost_more_than_you_think,
-};
+const meta = postsBySlug["why-website-projects-cost-more-than-you-think"];
 
 export default function Post() {
     return (

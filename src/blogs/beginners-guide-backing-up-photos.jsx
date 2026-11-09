@@ -1,18 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import beginners_guide_backing_up_photos from "../assets/covers/beginners-guide-backing-up-photos.png";
 
-export const meta = {
-    title: "Don't Get Locked Out! The Beginner's Guide to Backing Up Your Digital Photos",
-    slug: "beginners-guide-backing-up-photos",
-    date: "2025-05-19",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "Practical Tech Skills",
-    tags: ["Backups", "Cloud", "Platforms"]
-    ,
-    excerpt:
-        "Phones get lost, drives fail, and accounts lock you out. Here's a friendly, no-jargon plan to keep your memories safe—with simple defaults you can set up in one hour.",
-    cover: beginners_guide_backing_up_photos,
-};
+const meta = postsBySlug["beginners-guide-backing-up-photos"];
 
 export default function Post() {
     return (

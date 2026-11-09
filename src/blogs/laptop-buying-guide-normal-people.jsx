@@ -1,17 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import laptop_buying_guide_normal_people from "../assets/covers/laptop-buying-guide-normal-people.png";
 
-export const meta = {
-    title: "The Laptop Buying Guide for Normal People (Not Geeks)",
-    slug: "laptop-buying-guide-normal-people",
-    date: "2025-08-04",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "Back to Basics & Forward Thinking",
-    tags: ["Hardware", "Performance", "Platforms"],
-    excerpt:
-        "No alphabet soup, no fan wars. A simple way to choose a laptop you'll love-based on what you actually do-plus clear spec targets and a printable checklist.",
-    cover: laptop_buying_guide_normal_people,
-};
+const meta = postsBySlug["laptop-buying-guide-normal-people"];
 
 export default function Post() {
     return (

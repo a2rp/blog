@@ -1,16 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import is_your_smart_device_listening from "../assets/covers/is-your-smart-device-listening.png";
 
-export const meta = {
-    title: "Is Your Smart Device Listening to You? The Truth About Microphones and Ads.",
-    slug: "is-your-smart-device-listening",
-    date: "2025-02-11",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "Digital Life & Security",
-    tags: ["Privacy", "Platforms", "AI"],
-    excerpt: "You talk about kayaking with a friend, and suddenly your phone shows you kayak ads. It feels like it's listening. The truth is both more complicated, and in a way, more concerning.",
-    cover: is_your_smart_device_listening,
-};
+const meta = postsBySlug["is-your-smart-device-listening"];
 
 export default function Post() {
     return (

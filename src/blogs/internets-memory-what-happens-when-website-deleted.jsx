@@ -1,17 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import internets_memory_what_happens_when_website_deleted from "../assets/covers/internets-memory-what-happens-when-website-deleted.png";
 
-export const meta = {
-    title: "The Internet's Memory: What Happens to a Website When It's Deleted?",
-    slug: "internets-memory-what-happens-when-website-deleted",
-    date: "2025-04-28",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "Demystifying Tech Trends",
-    tags: ["Web Basics", "Backups", "Cloud"],
-    excerpt:
-        "Hit delete and it's gone, right? Not on the internet. Here's where ‘deleted' websites linger—CDNs, caches, backups, and archives—and what both users and builders can do about it.",
-    cover: internets_memory_what_happens_when_website_deleted,
-};
+const meta = postsBySlug["internets-memory-what-happens-when-website-deleted"];
 
 export default function Post() {
     return (

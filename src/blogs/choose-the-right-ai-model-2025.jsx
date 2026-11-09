@@ -1,17 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import ai_model_chooser_2025 from "../assets/covers/choose-the-right-ai-model-2025.png";
 
-export const meta = {
-    title: "Choosing the Right AI Model in 2025 - A Practical Playbook for MERN Devs",
-    slug: "choose-the-right-ai-model-2025",
-    date: "2025-08-31",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "AI & LLMs",
-    tags: ["AI", "LLM", "Beginner", "MERN", "Practical"],
-    excerpt:
-        "I'm a self-taught AI dev. This is my no-drama checklist for picking models: define the job, pick a speed, keep outputs tidy, only add RAG if it truly helps, and ship small.",
-    cover: ai_model_chooser_2025,
-};
+const meta = postsBySlug["choose-the-right-ai-model-2025"];
 
 export default function Post() {
     return (

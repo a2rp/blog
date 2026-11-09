@@ -1,17 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import travel_smarter_tech_on_vacation from "../assets/covers/travel-smarter-tech-on-vacation.png";
 
-export const meta = {
-    title: "Travel Smarter: How to Use Technology on Your Summer Vacation",
-    slug: "travel-smarter-tech-on-vacation",
-    date: "2025-07-07",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "Summer & Tech",
-    tags: ["Networking", "Privacy", "Backups"],
-    excerpt:
-        "Let tech be your sidekick, not your boss. A practical guide to staying connected, safe, and sane-maps, money, photos, power, and privacy-without turning your holiday into a second job.",
-    cover: travel_smarter_tech_on_vacation,
-};
+const meta = postsBySlug["travel-smarter-tech-on-vacation"];
 
 export default function Post() {
     return (

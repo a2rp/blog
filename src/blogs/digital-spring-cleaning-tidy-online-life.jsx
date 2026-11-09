@@ -1,17 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import digital_spring_cleaning_tidy_online_life from "../assets/covers/digital-spring-cleaning-tidy-online-life.png";
 
-export const meta = {
-    title: "Digital Spring Cleaning: 5 Things You Can Do Today to Tidy Your Online Life",
-    slug: "digital-spring-cleaning-tidy-online-life",
-    date: "2025-05-05",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "Practical Tech Skills",
-    tags: ["Privacy", "Security", "Backups"],
-    excerpt:
-        "Quick, high-impact steps to protect accounts, cut noise, and back up what matters. No jargon—just a focused checklist you can finish in an hour.",
-    cover: digital_spring_cleaning_tidy_online_life,
-};
+const meta = postsBySlug["digital-spring-cleaning-tidy-online-life"];
 
 export default function Post() {
     return (

@@ -1,16 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import spotting_online_scams_phishing_guide from "../assets/covers/spotting-online-scams-phishing-guide.png";
 
-export const meta = {
-    title: "A Developer's Guide to Spotting Online Scams and Phishing Emails",
-    slug: "spotting-online-scams-phishing-guide",
-    date: "2025-02-18",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "Digital Life & Security",
-    tags: ["Security", "Privacy", "Web Basics"],
-    excerpt: "That urgent email from 'your bank' looks real. The website it links to looks perfect. But it's all a trap. Learn the telltale signs developers look for to spot a phishing attempt from a mile away.",
-    cover: spotting_online_scams_phishing_guide,
-};
+const meta = postsBySlug["spotting-online-scams-phishing-guide"];
 
 export default function Post() {
     return (

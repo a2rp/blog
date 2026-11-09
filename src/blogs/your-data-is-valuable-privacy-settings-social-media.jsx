@@ -1,17 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import your_data_is_valuable_privacy_settings_social_media from "../assets/covers/your-data-is-valuable-privacy-settings-social-media.png";
 
-export const meta = {
-    title: "Your Data is Valuable: A Simple Guide to Privacy Settings on Social Media",
-    slug: "your-data-is-valuable-privacy-settings-social-media",
-    date: "2025-05-12",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "Practical Tech Skills",
-    tags: ["Privacy", "Security", "Platforms"],
-    excerpt:
-        "A friendly, platform-agnostic checklist to make your social accounts safer and quieter—without disappearing from the internet.",
-    cover: your_data_is_valuable_privacy_settings_social_media,
-};
+const meta = postsBySlug["your-data-is-valuable-privacy-settings-social-media"];
 
 export default function Post() {
     return (

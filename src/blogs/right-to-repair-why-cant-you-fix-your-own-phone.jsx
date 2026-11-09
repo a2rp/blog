@@ -1,17 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import right_to_repair_why_cant_you_fix_your_own_phone from "../assets/covers/right-to-repair-why-cant-you-fix-your-own-phone.png";
 
-export const meta = {
-    title: `The "Right to Repair": Why Can't You Fix Your Own Phone?`,
-    slug: "right-to-repair-why-cant-you-fix-your-own-phone",
-    date: "2025-08-24",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "Back to Basics & Forward Thinking",
-    tags: ["Hardware", "Platforms", "Security"],
-    excerpt:
-        "Screens crack, batteries fade, ports loosen—welcome to reality. Here's why fixing modern gadgets is hard, what's changing, and how to choose (or design) tech that respects repair.",
-    cover: right_to_repair_why_cant_you_fix_your_own_phone,
-};
+const meta = postsBySlug["right-to-repair-why-cant-you-fix-your-own-phone"];
 
 export default function Post() {
     return (

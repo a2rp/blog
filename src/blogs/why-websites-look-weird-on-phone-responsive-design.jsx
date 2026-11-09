@@ -1,16 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import why_websites_look_weird_on_phone_responsive_design from "../assets/covers/why-websites-look-weird-on-phone-responsive-design.png";
 
-export const meta = {
-    title: "Why Does This Website Look Weird on My Phone? An Intro to Responsive Design",
-    slug: "why-websites-look-weird-on-phone-responsive-design",
-    date: "2025-01-21",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "How The Internet Works",
-    tags: ["UX", "Web Basics", "Accessibility"],
-    excerpt: "Ever tried to read a website on your phone and had to play the pinch-and-zoom game? That's a failure of responsive design. Here's how the good websites get it right.",
-    cover: why_websites_look_weird_on_phone_responsive_design,
-};
+const meta = postsBySlug["why-websites-look-weird-on-phone-responsive-design"];
 
 export default function Post() {
     return (

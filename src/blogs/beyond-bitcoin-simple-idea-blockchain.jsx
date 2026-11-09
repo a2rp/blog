@@ -1,16 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import beyond_bitcoin_simple_idea_blockchain from "../assets/covers/beyond-bitcoin-simple-idea-blockchain.png";
 
-export const meta = {
-    title: "Beyond Bitcoin: The Simple Idea Behind Blockchain",
-    slug: "beyond-bitcoin-simple-idea-blockchain",
-    date: "2025-04-14",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "Demystifying Tech Trends",
-    tags: ["Blockchain", "Security", "Platforms"],
-    excerpt: "Blockchain is so much more than cryptocurrency. At its heart, it's a surprisingly simple and powerful idea about trust and record-keeping. Let's break down how it works and why it might change more than just money.",
-    cover: beyond_bitcoin_simple_idea_blockchain,
-};
+const meta = postsBySlug["beyond-bitcoin-simple-idea-blockchain"];
 
 export default function Post() {
     return (

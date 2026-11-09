@@ -1,17 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import from_idea_to_app_long_journey_of_a_simple_feature from "../assets/covers/from-idea-to-app-long-journey-of-a-simple-feature.png";
 
-export const meta = {
-    title: "From Idea to App: The Long Journey of a Simple Feature",
-    slug: "from-idea-to-app-long-journey-of-a-simple-feature",
-    date: "2025-06-16",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "A Look at Tech Culture & Careers",
-    tags: ["UX", "DevOps", "Accessibility"],
-    excerpt:
-        `"It's just a button." Famous last words. Walk with me through how a small feature actually ships—from fuzzy idea to pixels in production—without breaking everything else.`,
-    cover: from_idea_to_app_long_journey_of_a_simple_feature,
-};
+const meta = postsBySlug["from-idea-to-app-long-journey-of-a-simple-feature"];
 
 export default function Post() {
     return (

@@ -1,16 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import cookies_website_tracking_guide from "../assets/covers/cookies-website-tracking-guide.png";
 
-export const meta = {
-    title: "Cookies Aren't Just for Eating: A Simple Guide to Website Tracking",
-    slug: "cookies-website-tracking-guide",
-    date: "2025-01-28",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "How The Internet Works",
-    tags: ["Privacy", "Web Basics", "Platforms"],
-    excerpt: "Those 'Accept Cookies' pop-ups are everywhere. But what are you actually accepting? Let's break down what cookies really are, why they exist, and what it means for your privacy.",
-    cover: cookies_website_tracking_guide,
-};
+const meta = postsBySlug["cookies-website-tracking-guide"];
 
 export default function Post() {
     return (

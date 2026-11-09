@@ -298,6 +298,22 @@ textarea:focus-visible {
     margin: 0 auto;
     padding: 0 16px;
 }
+.routeLoading {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.routeLoadingSpinner {
+    width: 36px;
+    height: 36px;
+    border: 3px solid var(--border);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: routeLoadingSpin 0.8s linear infinite;
+}
+@keyframes routeLoadingSpin {
+    to { transform: rotate(360deg); }
+}
 .text-center {
     text-align: center;
 }

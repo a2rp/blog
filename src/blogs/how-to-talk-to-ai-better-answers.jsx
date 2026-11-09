@@ -1,17 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import how_to_talk_to_ai_better_answers from "../assets/covers/how-to-talk-to-ai-better-answers.png";
 
-export const meta = {
-    title: "How to Talk to AI: A 10-Minute Guide for Better Answers",
-    slug: "how-to-talk-to-ai-better-answers",
-    date: "2025-09-21",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "AI for Everyone",
-    tags: ["AI", "Productivity", "Education", "Privacy"],
-    excerpt:
-        "Achhe sawaal → achhe jawaab. Master a 5-step prompt formula (Goal, Context, Constraints, Example, Format) with ready templates for teachers, students, founders, and devs.",
-    cover: how_to_talk_to_ai_better_answers,
-};
+const meta = postsBySlug["how-to-talk-to-ai-better-answers"];
 
 export default function Post() {
     return (

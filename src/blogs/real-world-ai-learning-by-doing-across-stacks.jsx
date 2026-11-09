@@ -1,3 +1,4 @@
+import { postsBySlug } from "../blogMetadata.js";
 // src/blogs/real-world-ai-learning-by-doing-across-stacks.jsx
 
 import React from "react";
@@ -5,7 +6,6 @@ import { Styled } from "./styled"; // same pattern as your working post ✅
 
 // Images (ensure these exist; ?url forces URL string even if SVGR is enabled)
 
-const COVER = new URL("../assets/covers/ai-learning-by-doing-cover.png", import.meta.url).href;
 const FIG_ARCH = new URL("../assets/covers/ai-learning-by-doing-architecture.svg", import.meta.url).href;
 const FIG_FLOW = new URL("../assets/covers/ai-learning-by-doing-flow.svg", import.meta.url).href;
 const FIG_EVAL = new URL("../assets/covers/ai-learning-by-doing-eval.svg", import.meta.url).href;
@@ -14,27 +14,7 @@ const FIG_EVAL = new URL("../assets/covers/ai-learning-by-doing-eval.svg", impor
 const FALLBACK_SVG = `data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='560'><rect width='100%' height='100%' fill='%23121214'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Inter,system-ui' font-size='20' fill='%23a0a0a7'>image not found</text></svg>`;
 
 
-export const meta = {
-    title:
-        "Real-World AI: What I Built in React, Vanilla JS, Node.js & Python — And Why Each Was Right",
-    slug: "real-world-ai-learning-by-doing-across-stacks",
-    date: "2025-10-26",
-    author: "Ashish Ranjan — Full-Stack Developer",
-    category: "AI by Doing",
-    tags: [
-        "AI",
-        "RAG",
-        "Semantic Search",
-        "React",
-        "Vanilla JS",
-        "Node.js",
-        "Python",
-        "Evaluation",
-    ],
-    excerpt:
-        "Not the same demo in four languages—real situations. I shipped UX in React, privacy in the browser, guardrails in Node, and truth in Python. Here’s the playbook with code and visuals.",
-    cover: COVER,
-};
+const meta = postsBySlug["real-world-ai-learning-by-doing-across-stacks"];
 
 export default function Post() {
     return (

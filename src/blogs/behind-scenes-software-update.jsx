@@ -1,16 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import behind_scenes_software_update from "../assets/covers/behind-scenes-software-update.png";
 
-export const meta = {
-    title: "\"It's Not a Bug, It's a Feature!\" - Behind the Scenes of a Software Update",
-    slug: "behind-scenes-software-update",
-    date: "2025-03-10",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "Behind The Digital Curtain",
-    tags: ["DevOps", "UX", "Performance"],
-    excerpt: "That annoying 'update required' notification pops up all the time. What's actually in there? From squashing bugs to building new features, here's the messy, collaborative process of how software grows and improves.",
-    cover: behind_scenes_software_update,
-};
+const meta = postsBySlug["behind-scenes-software-update"];
 
 export default function Post() {
     return (

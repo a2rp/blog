@@ -1,18 +1,8 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import are_you_addicted_how_apps_keep_you_scrolling from "../assets/covers/are-you-addicted-how-apps-keep-you-scrolling.png";
 
 
-export const meta = {
-    title: "Are You Addicted to Your Phone? How Apps Are Designed to Keep You Scrolling",
-    slug: "are-you-addicted-how-apps-keep-you-scrolling",
-    date: "2025-04-21",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "Demystifying Tech Trends",
-    tags: ["UX", "Platforms", "AI"],
-    excerpt:
-        "Endless feeds, streaks, and push-notifications aren't accidents—they're product decisions. Here's a friendly teardown of the design patterns that keep us glued to screens, plus practical ways to take back control.",
-    cover: are_you_addicted_how_apps_keep_you_scrolling,
-};
+const meta = postsBySlug["are-you-addicted-how-apps-keep-you-scrolling"];
 
 export default function Post() {
     return (

@@ -1,16 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import why_apps_feel_slow_speed_vs_features from "../assets/covers/why-apps-feel-slow-speed-vs-features.png";
 
-export const meta = {
-    title: "Why Does This App Feel So Slow? The Developer's Dilemma of Speed vs. Features",
-    slug: "why-apps-feel-slow-speed-vs-features",
-    date: "2025-03-17",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "Behind The Digital Curtain",
-    tags: ["Performance", "UX", "DevOps"],
-    excerpt: "You've felt it. The frustrating lag, the unresponsive button, the endless loading spinner. Speed isn't an accident—it's a constant, difficult battle fought by developers against an ever-growing pile of features.",
-    cover: why_apps_feel_slow_speed_vs_features,
-};
+const meta = postsBySlug["why-apps-feel-slow-speed-vs-features"];
 
 export default function Post() {
     return (

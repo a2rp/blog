@@ -1,17 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import are_software_subscriptions_a_good_deal from "../assets/covers/are-software-subscriptions-a-good-deal.png";
 
-export const meta = {
-    title: "Are Software Subscriptions (Like Netflix and Adobe) a Good Deal?",
-    slug: "are-software-subscriptions-a-good-deal",
-    date: "2025-08-18",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "Back to Basics & Forward Thinking",
-    tags: ["Subscriptions", "Cloud", "Platforms"],
-    excerpt:
-        "Subscriptions can be amazing—or a slow leak in your wallet. Here's a plain-English way to decide what to keep, cancel, or replace with a one-time tool.",
-    cover: are_software_subscriptions_a_good_deal,
-};
+const meta = postsBySlug["are-software-subscriptions-a-good-deal"];
 
 export default function Post() {
     return (

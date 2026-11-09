@@ -1,17 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import why_internet_slow_on_the_beach_vacation_tech_woes from "../assets/covers/why-internet-slow-on-the-beach-vacation-tech-woes.png";
 
-export const meta = {
-    title: "Why Your Internet Is So Slow on the Beach (And Other Vacation Tech Woes)",
-    slug: "why-internet-slow-on-the-beach-vacation-tech-woes",
-    date: "2025-07-21",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "Summer & Tech",
-    tags: ["Networking", "Performance", "Hardware"],
-    excerpt:
-        "Crowds, heat, and weak hotel routers aren't a vibe for your phone. Here's a friendly, practical guide to getting usable internet on vacation—what actually slows you down and what to do about it.",
-    cover: why_internet_slow_on_the_beach_vacation_tech_woes,
-};
+const meta = postsBySlug["why-internet-slow-on-the-beach-vacation-tech-woes"];
 
 export default function Post() {
     return (

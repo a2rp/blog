@@ -1,17 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import open_source_hidden_collaboration from "../assets/covers/open-source-hidden-collaboration.png";
 
-export const meta = {
-    title: "Open Source: The Hidden Collaboration Behind Most Software",
-    slug: "open-source-hidden-collaboration",
-    date: "2025-06-23",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "A Look at Tech Culture & Careers",
-    tags: ["Open Source", "Careers", "DevOps"],
-    excerpt:
-        "From your browser to your backend, open source quietly powers the stack. Here’s how it actually works, why companies rely on it, and how you can start contributing—even without writing a single line of code.",
-    cover: open_source_hidden_collaboration,
-};
+const meta = postsBySlug["open-source-hidden-collaboration"];
 
 export default function Post() {
     return (

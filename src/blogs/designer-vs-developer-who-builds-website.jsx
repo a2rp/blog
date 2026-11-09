@@ -1,16 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import designer_vs_developer_who_builds_website from "../assets/covers/designer-vs-developer-who-builds-website.png";
 
-export const meta = {
-    title: "Designer vs. Developer: Who Actually Builds a Website?",
-    slug: "designer-vs-developer-who-builds-website",
-    date: "2025-03-03",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "Behind The Digital Curtain",
-    tags: ["UX", "Careers", "Web Basics"],
-    excerpt: "It's the classic tech duo. One is obsessed with pixels and user flow. The other is obsessed with code and performance. Here's how these two very different roles combine to create the sites you use every day.",
-    cover: designer_vs_developer_who_builds_website,
-};
+const meta = postsBySlug["designer-vs-developer-who-builds-website"];
 
 export default function Post() {
     return (

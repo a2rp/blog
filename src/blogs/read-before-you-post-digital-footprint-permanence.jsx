@@ -1,17 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import read_before_you_post_digital_footprint_permanence from "../assets/covers/read-before-you-post-digital-footprint-permanence.png";
 
-export const meta = {
-    title: "Read This Before You Post: The Permanence of Your Digital Footprint",
-    slug: "read-before-you-post-digital-footprint-permanence",
-    date: "2025-05-26",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "Practical Tech Skills",
-    tags: ["Privacy", "Backups", "Platforms"],
-    excerpt:
-        "The internet never truly forgets. Here's how posts live on through screenshots, caches, data brokers, and backups—plus a simple pre-post checklist you can actually use.",
-    cover: read_before_you_post_digital_footprint_permanence,
-};
+const meta = postsBySlug["read-before-you-post-digital-footprint-permanence"];
 
 export default function Post() {
     return (

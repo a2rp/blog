@@ -1,17 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import tech_behind_summer_blockbuster_more_than_cgi from "../assets/covers/tech-behind-summer-blockbuster-more-than-cgi.png";
 
-export const meta = {
-    title: "The Tech Behind Your Summer Blockbuster: More Than Just CGI",
-    slug: "tech-behind-summer-blockbuster-more-than-cgi",
-    date: "2025-07-14",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "Summer & Tech",
-    tags: ["Media Tech", "Hardware", "Performance"],
-    excerpt:
-        "Explosions, aliens, and impossible chases aren't just 'CGI'. Modern movies blend virtual production, motion capture, physics sims, color science, and sound tech to make the magic feel real.",
-    cover: tech_behind_summer_blockbuster_more_than_cgi,
-};
+const meta = postsBySlug["tech-behind-summer-blockbuster-more-than-cgi"];
 
 export default function Post() {
     return (

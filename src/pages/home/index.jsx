@@ -3,9 +3,7 @@ import { Link, NavLink, useSearchParams } from "react-router-dom";
 import { Styled } from "./styled";
 import { formatDate } from "../../utils/format";
 import { MdDeleteForever } from "react-icons/md";
-
-// Eager import ONLY for meta
-const metaModules = import.meta.glob("../../blogs/*.jsx", { eager: true });
+import { posts as blogPosts } from "../../blogMetadata.js";
 
 const MONTHS = [
     "January", "February", "March", "April", "May", "June",
@@ -13,15 +11,13 @@ const MONTHS = [
 ];
 
 function collectPosts() {
-    return Object.entries(metaModules)
-        .map(([path, mod]) => {
-            const fileSlug = path.split("/").pop().replace(".jsx", "");
-            const m = mod.meta || {};
+    return blogPosts
+        .map((m) => {
             const date = m.date || "1970-01-01";
             const d = new Date(date);
             return {
-                slug: m.slug || fileSlug,
-                title: m.title || fileSlug,
+                slug: m.slug || m.fileSlug,
+                title: m.title || m.fileSlug,
                 date,
                 tags: m.tags || [],
                 excerpt: m.excerpt || "",

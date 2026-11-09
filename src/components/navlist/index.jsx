@@ -3,9 +3,7 @@ import { NavLink, useLocation } from "react-router-dom";
 import { MdClear } from "react-icons/md";
 import { Styled } from "./styled";
 import { formatDate } from "../../utils/format";
-
-// read meta from /blogs/*.jsx
-const metaModules = import.meta.glob("../../blogs/*.jsx", { eager: true });
+import { posts as blogPosts } from "../../blogMetadata.js";
 
 const STORAGE_KEY = "navlist.search";
 
@@ -30,14 +28,12 @@ function highlight(text, q) {
 }
 
 function collectPosts() {
-    return Object.entries(metaModules)
-        .map(([path, mod]) => {
-            const fileSlug = path.split("/").pop().replace(".jsx", "");
-            const m = mod.meta || {};
+    return blogPosts
+        .map((m) => {
             const date = m.date || "1970-01-01";
             return {
-                slug: m.slug || fileSlug,
-                title: m.title || fileSlug,
+                slug: m.slug || m.fileSlug,
+                title: m.title || m.fileSlug,
                 date,
                 tags: m.tags || [],
                 category: m.category || "",

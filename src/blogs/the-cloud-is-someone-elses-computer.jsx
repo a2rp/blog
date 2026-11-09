@@ -1,16 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import the_cloud_is_someone_elses_computer from "../assets/covers/the-cloud-is-someone-elses-computer.png";
 
-export const meta = {
-    title: "\"The Cloud\" Isn't Magic: It's Just Someone Else's Computer",
-    slug: "the-cloud-is-someone-elses-computer",
-    date: "2025-01-14",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "How The Internet Works",
-    tags: ["Cloud", "DevOps", "Security"],
-    excerpt: "We entrust our photos, emails, and files to 'the cloud' every day. But what is it, really? Let's pull back the curtain on the world's most powerful rental computer system.",
-    cover: the_cloud_is_someone_elses_computer,
-};
+const meta = postsBySlug["the-cloud-is-someone-elses-computer"];
 
 export default function Post() {
     return (

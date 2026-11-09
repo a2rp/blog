@@ -1,17 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import what_does_beta_actually_mean_peek_into_software_testing from "../assets/covers/what-does-beta-actually-mean-peek-into-software-testing.png";
 
-export const meta = {
-    title: `What Does "Beta" Actually Mean? A Peek into Software Testing`,
-    slug: "what-does-beta-actually-mean-peek-into-software-testing",
-    date: "2025-03-24",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "Behind The Digital Curtain",
-    tags: ["DevOps", "UX", "Performance"],
-    excerpt:
-        "Alpha, beta, RC… who makes up these labels and why do apps wear them? A friendly tour of how teams test software, what 'beta' really signals, and how you can try new features without being a guinea pig.",
-    cover: what_does_beta_actually_mean_peek_into_software_testing,
-};
+const meta = postsBySlug["what-does-beta-actually-mean-peek-into-software-testing"];
 
 export default function Post() {
     return (

@@ -1,18 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
 import { formatDate } from "../utils/format";
-import cover from "../assets/covers/the-dignity-stack-for-india.png";
-
-export const meta = {
-    title: "The Dignity Stack: Local-First, Print-Ready, Privacy-Respecting Apps for Bharat",
-    slug: "the-dignity-stack-for-india",
-    date: "2025-10-11",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "Architecture",
-    tags: ["Local-First", "UX", "Privacy", "Performance", "MERN"],
-    excerpt:
-        "₹0 infra vibes, offline-by-default speed, section-level print, and data dignity. A humane blueprint for apps that real users trust and love.",
-    cover,
-};
+const meta = postsBySlug["the-dignity-stack-for-india"];
 
 export default function Post() {
     return (

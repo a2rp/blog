@@ -1,17 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import decoding_tech_job_titles_devops_ux_sre_pm from "../assets/covers/decoding-tech-job-titles-devops-ux-sre-pm.png";
 
-export const meta = {
-    title: `Why Do Tech Companies Have So Many Weird Job Titles? (Decoding "DevOps," "UX," etc.)`,
-    slug: "decoding-tech-job-titles-devops-ux-sre-pm",
-    date: "2025-06-30",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "A Look at Tech Culture & Careers",
-    tags: ["Careers", "DevOps", "UX"],
-    excerpt:
-        "Tech job titles can feel like alphabet soup. Here’s a plain-English decoder ring—who does what, how roles overlap, and which path might fit you.",
-    cover: decoding_tech_job_titles_devops_ux_sre_pm,
-};
+const meta = postsBySlug["decoding-tech-job-titles-devops-ux-sre-pm"];
 
 export default function Post() {
     return (

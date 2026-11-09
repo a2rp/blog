@@ -1,16 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import your_password_is_terrible from "../assets/covers/your-password-is-terrible.png";
 
-export const meta = {
-    title: "Your Password is Terrible, and Here's Why.",
-    slug: "your-password-is-terrible",
-    date: "2025-02-04",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "Digital Life & Security",
-    tags: ["Security", "Privacy", "Web Basics"],
-    excerpt: "Let's be honest, you've used 'password123' more than once. It's not your fault—remembering dozens of passwords is impossible. Here's why weak passwords are a problem and what you can actually do about it.",
-    cover: your_password_is_terrible,
-};
+const meta = postsBySlug["your-password-is-terrible"];
 
 export default function Post() {
     return (

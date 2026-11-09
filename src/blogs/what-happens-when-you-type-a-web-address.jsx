@@ -1,17 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import what_happens_when_you_type_a_web_address from "../assets/covers/what-happens-when-you-type-a-web-address.png";
 
-export const meta = {
-    title: "What Really Happens When You Type a Web Address and Press Enter?",
-    slug: "what-happens-when-you-type-a-web-address",
-    date: "2025-01-07",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "How The Internet Works",
-    tags: ["Web Basics", "Networking", "Security"],
-    excerpt:
-        "A restaurant-style tour of DNS lookups, TLS handshakes, HTTP requests, servers, and the browser render pipeline—what really happens after you hit Enter.",
-    cover: what_happens_when_you_type_a_web_address
-};
+const meta = postsBySlug["what-happens-when-you-type-a-web-address"];
 
 export default function Post() {
     return (

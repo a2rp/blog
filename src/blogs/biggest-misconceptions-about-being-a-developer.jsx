@@ -1,17 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import biggest_misconceptions_about_being_a_developer from "../assets/covers/biggest-misconceptions-about-being-a-developer.png";
 
-export const meta = {
-    title: "The Biggest Misconceptions About Being a Developer (It's Not Like the Movies)",
-    slug: "biggest-misconceptions-about-being-a-developer",
-    date: "2025-06-09",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "A Look at Tech Culture & Careers",
-    tags: ["Careers", "DevOps", "UX"],
-    excerpt:
-        "Hoodies, neon terminals, and overnight 'genius' builds make great cinema—but bad career expectations. Here's what real software work looks like, and how to thrive in it.",
-    cover: biggest_misconceptions_about_being_a_developer,
-};
+const meta = postsBySlug["biggest-misconceptions-about-being-a-developer"];
 
 export default function Post() {
     return (

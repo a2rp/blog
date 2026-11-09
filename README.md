@@ -10,6 +10,7 @@ A focused React blog for clear, practical essays about software, the web, privac
 - Responsive desktop navigation and mobile menu
 - Dark and light themes with saved preference
 - Lazy-loaded article pages with related navigation
+- Searchable and filterable post metadata in `src/blogMetadata.js`
 - Local images and GitHub Pages deployment
 
 ## Tech stack
@@ -17,6 +18,8 @@ A focused React blog for clear, practical essays about software, the web, privac
 React, Vite, React Router, styled-components, Material UI, and React Icons.
 
 ## Run locally
+
+Requires Node.js 20.19 or newer.
 
 ```bash
 npm install

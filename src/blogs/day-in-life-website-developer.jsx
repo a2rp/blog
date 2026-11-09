@@ -1,17 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import day_in_life_website_developer from "../assets/covers/day-in-life-website-developer.png";
 
-export const meta = {
-    title: "A Day in the Life of a Website Developer (No, It's Not Just Coffee)",
-    slug: "day-in-life-website-developer",
-    date: "2025-06-02",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "A Look at Tech Culture & Careers",
-    tags: ["Careers", "DevOps", "UX"],
-    excerpt:
-        "What does a web developer actually do all day? Here's a realistic, non-glam version—from morning triage and code reviews to shipping safely and sleeping at night.",
-    cover: day_in_life_website_developer,
-};
+const meta = postsBySlug["day-in-life-website-developer"];
 
 export default function Post() {
     return (

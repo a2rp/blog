@@ -1,17 +1,7 @@
+import { postsBySlug } from "../blogMetadata.js";
 import { Styled } from "./styled";
-import ai_101_how_you_already_use_it_every_day from "../assets/covers/ai-101-how-you-already-use-it-every-day.png";
 
-export const meta = {
-    title: "AI 101: It's Not Just Sci-Fi. How You Already Use It Every Day.",
-    slug: "ai-101-how-you-already-use-it-every-day",
-    date: "2025-04-07",
-    author: "Ashish Ranjan - Full-Stack Developer",
-    category: "Demystifying Tech Trends",
-    tags: ["AI", "Privacy", "Cloud"],
-    excerpt:
-        "Spam filters, Maps' ETA, Face Unlock, even your camera's Night Mode—yep, that's AI. A friendly tour of the invisible models already working for you, plus tips to use them wisely.",
-    cover: ai_101_how_you_already_use_it_every_day,
-};
+const meta = postsBySlug["ai-101-how-you-already-use-it-every-day"];
 
 export default function Post() {
     return (
