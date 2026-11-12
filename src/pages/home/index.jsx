@@ -1,7 +1,7 @@
 import { useMemo, useRef } from "react";
 import { Link, NavLink, useSearchParams } from "react-router-dom";
 import { Styled } from "./styled";
-import { formatDate } from "../../utils/format";
+import { formatDate, parseDate } from "../../utils/format";
 import { MdDeleteForever } from "react-icons/md";
 import { posts as blogPosts } from "../../blogMetadata.js";
 
@@ -14,7 +14,7 @@ function collectPosts() {
     return blogPosts
         .map((m) => {
             const date = m.date || "1970-01-01";
-            const d = new Date(date);
+            const d = parseDate(date);
             return {
                 slug: m.slug || m.fileSlug,
                 title: m.title || m.fileSlug,
